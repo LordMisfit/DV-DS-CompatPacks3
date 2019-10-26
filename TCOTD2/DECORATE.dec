@@ -1,0 +1,5 @@
+#include "decorate/tcotd2_FIRE.dec"
+#include "decorate/tcotd2_NASHGORE.dec"
+#include "decorate/tcotd2_GENDATA.dec"
+#include "decorate/tcotd2items.dec"
+#include "decorate/tcotd2monsters.dec"
