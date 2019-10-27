@@ -20,12 +20,12 @@ actor ClientSpawner 19191
 // LOAD LIBRARIES //
 ////////////////////
 
-#include "DEC_MONS"
-#include "DEC_WEAP"
-#include "DEC_MARI"
-#include "DEC_OBJE"
-#include "DEC_WOLF"
-#include "DEC_SMSM"
-#include "DEC_SFX"
+#include "decorate/DEC_MONS.dec"
+#include "decorate/DEC_WEAP.dec"
+#include "decorate/DEC_MARI.dec"
+#include "decorate/DEC_OBJE.dec"
+#include "decorate/DEC_WOLF.dec"
+#include "decorate/DEC_SMSM.dec"
+#include "decorate/DEC_SFX.dec"
 
 
