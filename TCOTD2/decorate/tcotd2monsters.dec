@@ -1914,6 +1914,8 @@ Actor ClayDevilNew : AetheriusMonsterZSC replaces ClayDevil
 			N00B JJJ 9
 			goto See
 		Pain.Ice:
+			N00B J 4 A_DVDSPain
+			Goto See
 
 		Pain.Plasma:
 			N00B J 6 A_DVDSPain
@@ -1925,6 +1927,10 @@ Actor ClayDevilNew : AetheriusMonsterZSC replaces ClayDevil
 			N00B J 4 A_DVDSPain
 			goto See
 
+		Pain.PoisonNeedle:
+			N00B J 15 A_DVDSPain
+			N00B JJJ 15
+			goto See
 
 		Death: // Clay Devils reconsitute themselves after a while like Death Incarnates [but without a way to 'Overkill' them, making them effectively immortal]
 			TNT1 A 0 A_DVDSNormalDeath(40,0,1) // Gives a flat base of 40 so you can't grind off of them very effectively.
@@ -1960,12 +1966,7 @@ Actor ClayDevilNew : AetheriusMonsterZSC replaces ClayDevil
 			N00B V 5 
 			loop
 
-		DeathFireCheck:
-			TNT1 A 0 A_CheckFlag("FRIENDLY",2,AAPTR_DEFAULT)
-			TNT1 A 0 
-			goto Death.Fire+1
 		Death.Fire: // Dying from Fire puts it down for a longer time, but it will still get up eventually
-			TNT1 A 0 A_Jump(1, "DeathFireCheck")
 			TNT1 A 0 A_DVDSNormalDeath(40,0,1) // Gives a flat base of 40 so you can't grind off of them very effectively.
 			N00B K 5
 			N00B K 5
@@ -1995,6 +1996,40 @@ Actor ClayDevilNew : AetheriusMonsterZSC replaces ClayDevil
 				A_SetTics(user_autorestimer);
 			}
 		RegenFireCycle:
+			N00B V 0 CanRaise Thing_Raise(0)       
+			N00B V 5 
+			loop
+
+		Death.PoisonNeedle: // Dying from a Poison Needle Crit or poke will down them for an EXTREMELY long time, but it's still not permenant :V
+			TNT1 A 0 A_DVDSNormalDeath(40,0,1) // Gives a flat base of 40 so you can't grind off of them very effectively.
+			N00B K 5
+			N00B K 5
+			N00B L 4 A_Scream
+			N00B MNO 5 A_CustomMissile("WHSMOKE",32,0)
+			N00B P 4 A_NoBlocking
+			N00B P 0 A_SetSolid // No "nesting" these guys to prevent respawns :V
+			TNT1 A 0 
+			N00B V 0
+			{
+				if (random(1,256) <= 128) { user_autorestimer = random(2400,3000); }
+				else
+				{
+					if (random(1,256) <= 128) { user_autorestimer = random(1800,2400); }
+					else
+					{
+						if (random(1,256) <= 128) { user_autorestimer = random(1200,1800); }
+						else
+						{
+							user_autorestimer = random(600,1200);
+						}
+					}
+				}
+			}
+			N00B V 3000 
+			{
+				A_SetTics(user_autorestimer);
+			}
+		RegenPoisonNeedleCycle:
 			N00B V 0 CanRaise Thing_Raise(0)       
 			N00B V 5 
 			loop
