@@ -115,7 +115,7 @@ Actor ClayDevil
 			N00B E 2 A_Look
 			loop
 		See:
-			N00B AABBCCDD 2 A_ExtChase(256,128)
+			N00B AABBCCDD 2 A_Chase
 			loop
 
 		Missile:
@@ -2242,15 +2242,15 @@ ACTOR ShotgunCultist // 29011
 		See:
 			XFAN A 1 A_Chase
 			XFAN A 0 A_ChangeFlag("DROPOFF",random(0,1))
-			XFAN A 1 A_ExtChase(0,0,0,0)
+			XFAN A 1 A_Chase("","")
 			XFAN B 1 A_Chase
-			XFAN B 1 A_ExtChase(0,0,0,0)
+			XFAN B 1 A_Chase("","")
 			XFAN C 1 A_Chase
-			XFAN C 1 A_ExtChase(0,0,0,0)
+			XFAN C 1 A_Chase("","")
 			XFAN D 1 A_Chase
-			XFAN D 1 A_ExtChase(0,0,0,0)
+			XFAN D 1 A_Chase("","")
 			XFAN F 1 A_Chase
-			XFAN F 1 A_ExtChase(0,0,0,0)
+			XFAN F 1 A_Chase("","")
 			LOOP
 		Shout:
 			XFAN A 1 A_PlaySound("fanatic/sight")
@@ -2595,53 +2595,53 @@ ACTOR Fatty // 25010
 			loop
 		See:
 			E15W A 1 A_Chase
-			E15W A 1 A_ExtChase(0,0,0,0)
+			E15W A 1 A_Chase("","")
 			E15W A 1 A_Chase
-			E15W A 1 A_ExtChase(0,0,0,0)
+			E15W A 1 A_Chase("","")
 			E15W A 1 A_Chase
-			E15W A 1 A_ExtChase(0,0,0,0)
+			E15W A 1 A_Chase("","")
 			E15W B 1 A_Chase
-			E15W B 1 A_ExtChase(0,0,0,0)
+			E15W B 1 A_Chase("","")
 			E15W B 1 A_Chase
-			E15W B 1 A_ExtChase(0,0,0,0)
+			E15W B 1 A_Chase("","")
 			E15W B 1 A_Chase
-			E15W B 1 A_ExtChase(0,0,0,0)
+			E15W B 1 A_Chase("","")
 			E15W C 1 A_Chase
-			E15W C 1 A_ExtChase(0,0,0,0)
+			E15W C 1 A_Chase("","")
 			E15W C 1 A_Chase
-			E15W C 1 A_ExtChase(0,0,0,0)
+			E15W C 1 A_Chase("","")
 			E15W C 1 A_Chase
-			E15W C 1 A_ExtChase(0,0,0,0)
+			E15W C 1 A_Chase("","")
 			E15W D 1 A_Chase
-			E15W D 1 A_ExtChase(0,0,0,0)
+			E15W D 1 A_Chase("","")
 			E15W D 1 A_Chase
-			E15W D 1 A_ExtChase(0,0,0,0)
+			E15W D 1 A_Chase("","")
 			E15W D 1 A_Chase
-			E15W D 1 A_ExtChase(0,0,0,0)
+			E15W D 1 A_Chase("","")
 			E15W E 1 A_Chase
-			E15W E 1 A_ExtChase(0,0,0,0)
+			E15W E 1 A_Chase("","")
 			E15W E 1 A_Chase
-			E15W E 1 A_ExtChase(0,0,0,0)
+			E15W E 1 A_Chase("","")
 			E15W E 1 A_Chase
-			E15W E 1 A_ExtChase(0,0,0,0)
+			E15W E 1 A_Chase("","")
 			E15W F 1 A_Chase
-			E15W F 1 A_ExtChase(0,0,0,0)
+			E15W F 1 A_Chase("","")
 			E15W F 1 A_Chase
-			E15W F 1 A_ExtChase(0,0,0,0)
+			E15W F 1 A_Chase("","")
 			E15W F 1 A_Chase
-			E15W F 1 A_ExtChase(0,0,0,0)
+			E15W F 1 A_Chase("","")
 			TNT1 A 0
 			TNT1 A 0 A_Jump(100,"See2")
 			loop
 		See2:
 			E15W A 3 A_Chase
-			E15W A 3 A_ExtChase(0,0,0,0)
+			E15W A 3 A_Chase("","")
 			E15W A 3 A_Chase
-			E15W A 2 A_ExtChase(0,0,0,0)
+			E15W A 2 A_Chase("","")
 			E15W A 2 A_Chase
-			E15W A 2 A_ExtChase(0,0,0,0)
+			E15W A 2 A_Chase("","")
 			E15W B 2 A_Chase
-			E15W B 3 A_ExtChase(0,0,0,0)
+			E15W B 3 A_Chase("","")
 			TNT1 A 0
 			TNT1 A 0 A_Jump(100,"See")
 			loop
@@ -5403,17 +5403,17 @@ actor Gibs_general
 			Loop
 		See:
 			AZUM A 1 A_Chase
-			AZUM AA 1 A_ExtChase(0,0,0,0)
+			AZUM AA 1 A_Chase("","")
 			AZUM B 1 A_Chase
-			AZUM BB 1 A_ExtChase(0,0,0,0)
+			AZUM BB 1 A_Chase("","")
 			AZUM C 1 A_Chase
-			AZUM CC 1 A_ExtChase(0,0,0,0)
+			AZUM CC 1 A_Chase("","")
 			AZUM D 1 A_Chase
-			AZUM DD 1 A_ExtChase(0,0,0,0)
+			AZUM DD 1 A_Chase("","")
 			AZUM EE 1 A_Chase
-			AZUM E 1 A_ExtChase(0,0,0,0)
+			AZUM E 1 A_Chase("","")
 			AZUM F 1 A_Chase
-			AZUM FF 1 A_ExtChase(0,0,0,0)
+			AZUM FF 1 A_Chase("","")
 			loop
 		Melee:
 			BZUM A 5 A_FaceTarget
