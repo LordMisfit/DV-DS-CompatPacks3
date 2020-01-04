@@ -21,7 +21,7 @@ ACTOR ApprenticeNew : AetheriusMonsterZSC 30000
 	Painchance "Fist", 150 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 250 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 150 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Normal", 0.5
+	DamageFactor 0.5
 	DamageFactor "Magic", 0.5
 	DamageFactor "Crush", 4.8
 	MONSTER 
@@ -456,7 +456,7 @@ ACTOR LargeSpiderNew : AetheriusMonsterZSC 22291
 	Translation 1
 	MeleeDamage 2
 	MeleeRange 66
-	DamageFactor "Normal", 0.75
+	DamageFactor 0.75
 	DamageFactor "Crush", 24
 	MONSTER
 	+FLOORCLIP
@@ -939,7 +939,7 @@ ACTOR HellHoundNew : AetheriusMonsterZSC 30121
 	Painchance "Fist", 192 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 192 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Normal", 0.875
+	DamageFactor 0.875
 	DamageFactor "Crush", 6.4
 	MONSTER
 	+FloorClip
@@ -1463,7 +1463,7 @@ ACTOR SirenNightmareNew : NightmareNew 31111
 	Painchance "Fist", 72 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 120 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 72 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Normal", 0.2
+	DamageFactor 0.2
 	DamageFactor "Holy", 5
 	DamageFactor "Crush", 0
 	Radius 12 // 10
@@ -1801,7 +1801,7 @@ Actor ClayDevilNew : AetheriusMonsterZSC replaces ClayDevil
 	PainChance "Lightning", 36
 	PainChance "Electric", 36
 	PainChance "Thunder", 36
-	DamageFactor "Normal", 0.5 // Double Resistance to most
+	DamageFactor 0.5 // Double Resistance to most
 	DamageFactor "Magic", 0.5 // Double Resistance to most
 	DamageFactor "Fire", 2.5
 	DamageFactor "Ice", 0.67
@@ -2878,7 +2878,7 @@ ACTOR ButcherZombieNew : AetheriusMonsterZSC 25010
 	Painchance "Kick", 16 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 8 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Melee", 8
-	DamageFactor "Normal", 0.95
+	DamageFactor 0.95
 	DamageFactor "Melee", 0.80
 	DamageFactor "Stomp", 0.80
 	DamageFactor "Trample", 0.80
@@ -3234,7 +3234,7 @@ actor BloodZombieNew : AetheriusMonsterZSC 31002
 	PainChance "Lightning", 255
 	PainChance "Electric", 255
 	PainChance "Thunder", 255
-	DamageFactor "Normal", 0.75
+	DamageFactor 0.75
 	DamageFactor "Fire", 2
 	DamageFactor "Holy", 1.5
 	DamageFactor "Crush", 6.4
@@ -3477,7 +3477,7 @@ ACTOR ThamuzNew : AetheriusMonsterZSC 7228
 	Painchance "Fist", 52 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 87 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 52 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Normal", 0.375
+	DamageFactor 0.375
 	DamageFactor "Crush", 0.5
 	MONSTER
 	+Boss
@@ -3682,7 +3682,7 @@ Actor TchernobogNew : ThamuzNew replaces Tchernobog 7258
 	Radius 40
 	Height 110
 	Health 21333
-	DamageFactor "Normal", 0.25
+	DamageFactor 0.25
 	DamageFactor "Crush", 0.5
 	Mass 80000
 	Speed 16
