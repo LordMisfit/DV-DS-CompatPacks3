@@ -565,14 +565,7 @@ ACTOR TCOTDBulletTracer : AetheriusBulletTracerZSC
 		Spawn:
 			TNT1 A 0 NoDelay bright
 		Idle:
-			TNT1 A 0 bright
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-15.0,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-12.5,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-10.0,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-7.5,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-5.0,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-2.5,0,0,0,0,0,0,128,0)
-		TNT1 A 1 bright A_SpawnItemEx("TCOTDBulletTracerTrail",0.0,0,0,0,0,0,0,128,0)
+			TNT1 A 1 bright A_SpawnTracerTrail("TCOTDBulletTracerTrail",6,-2.5)
 			loop
 		XDeath:
 			TNT1 A 1 //A_SpawnItem("BulletPuff")
@@ -590,16 +583,18 @@ ACTOR TCOTDBulletTracerCrisis : TCOTDBulletTracer
 	{
 		Spawn:
 			TNT1 A 0 NoDelay bright
+			CTAC A 0 bright A_GenerateCrisisParticle
 		Idle:
-			TNT1 A 0 bright
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-15.0,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-12.5,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-10.0,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-7.5,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-5.0,0,0,0,0,0,0,128,0)
-			TNT1 A 0 bright A_SpawnItemEx("TCOTDBulletTracerTrail",-2.5,0,0,0,0,0,0,128,0)
-			TNT1 A 1 bright A_SpawnItemEx("TCOTDBulletTracerTrail",0.0,0,0,0,0,0,0,128,0)
+			TNT1 A 1 bright A_SpawnTracerTrail("TCOTDBulletTracerTrail",6,-2.5)
+			CTAC A 0 bright A_GenerateCrisisParticle
 			loop
+		XDeath:
+			TNT1 A 1 //A_SpawnItem("BulletPuff")
+			stop
+		Death:
+		Crash:
+			TNT1 A 1 A_SpawnItem("BulletPuff")
+			stop
 	}
 }
 actor TCOTDBulletTracerTrail
