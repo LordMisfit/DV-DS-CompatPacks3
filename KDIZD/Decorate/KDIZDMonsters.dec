@@ -30,11 +30,14 @@ ACTOR ChainsawZombieNew : AetheriusMonsterZSC 3204
 		Spawn: 
 			CHAN A 0 NoDelay 
 			CHAN A 4 A_Look 
-			CHAN A 4 { A_PlayWeaponSound("weapons/sawidle"); A_Look; }
+			CHAN B 0 A_PlayWeaponSound("weapons/sawidle") 
 			CHAN A 4 A_Look 
-			CHAN B 4 { A_PlayWeaponSound("weapons/sawidle"); A_Look; } 
+			CHAN A 4 A_Look 
+			CHAN B 0 A_PlayWeaponSound("weapons/sawidle") 
 			CHAN B 4 A_Look 
-			CHAN B 4 { A_PlayWeaponSound("weapons/sawidle"); A_Look; }
+			CHAN B 4 A_Look 
+			CHAN B 0 A_PlayWeaponSound("weapons/sawidle") 
+			CHAN B 4 A_Look 
 			goto Spawn+1
 		See: 
 			CHAN A 0
@@ -571,12 +574,8 @@ ACTOR NightmareNew : AetheriusMonsterZSC 26000
 	states
 	{
 		Spawn:
-			NMRE A 0 NoDelay 
-			NMRE AABB 5 
-			{
-				A_NightmarePhaseOut;
-				A_Look;
-			}
+			NMRE A 0 NoDelay A_NightmarePhaseOut
+			NMRE AABB 5 A_Look
 			goto Spawn+1
 		See:
 			NMRE A 0

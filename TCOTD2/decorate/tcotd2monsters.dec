@@ -1353,12 +1353,8 @@ ACTOR NightmareNew : AetheriusMonsterZSC replaces KDiZDNightmare 26000
 	states
 	{
 		Spawn:
-			NMRE A 0 NoDelay 
-			NMRE AABB 5 
-			{
-				A_NightmarePhaseOut;
-				A_Look;
-			}
+			NMRE A 0 NoDelay A_NightmarePhaseOut
+			NMRE AABB 5 A_Look
 			goto Spawn+1
 		See:
 			NMRE A 0
@@ -1493,12 +1489,8 @@ ACTOR SirenNightmareNew : NightmareNew 31111
 	states
 	{
 		Spawn:
-			NMRE A 0 NoDelay 
-			NMRE AABB 5 
-			{
-				A_NightmarePhaseOut;
-				A_Look;
-			}
+			NMRE A 0 NoDelay A_NightmarePhaseOut
+			NMRE AABB 5 A_Look
 			goto Spawn+1
 		See:
 			NMRE A 0
@@ -3277,11 +3269,7 @@ actor BloodZombieNew : AetheriusMonsterZSC 31002
 	{
 		Spawn:
 			BZUM A 0 NoDelay 
-			BZUM A 10
-			{
-				user_HPXDeathRange2 = user_HPXDeathRange / 2;
-				A_Look;
-			}
+			BZUM A 10 A_Look
 			goto Spawn+1
 		See:
 			AZUM A 0
@@ -3457,9 +3445,6 @@ actor BloodZombieNew : AetheriusMonsterZSC 31002
 
 		Raise:
 			AZUM M 5 
-			{
-				user_HPXDeathRange2 = user_HPXDeathRange / 2; 
-			}
 			AZUM NOPQR 5 
 			goto See
 		Ice:

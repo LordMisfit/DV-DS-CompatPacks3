@@ -510,18 +510,12 @@ ACTOR ChainsawMarine : BaseAllyMarine 30008
 	States
 	{
 		Spawn:
-			ALY7 AA 4 
-			{
-				A_Look;
-				A_PlaySound ("weapons/sawidle");
-			}
+			ALY7 AA 4 A_Look
+			ALY7 A 0 A_PlaySound ("weapons/sawidle")
 			ALY7 AB 2 A_Look
 			ALY7 B 0 A_PlaySound ("weapons/sawidle")
-			ALY7 BB 4 
-			{
-				A_Look;
-				A_PlaySound ("weapons/sawidle");
-			}
+			ALY7 BB 4 A_Look
+			ALY7 A 0 A_PlaySound ("weapons/sawidle")
 			Loop
 		See:
 			ALY7 A 0
