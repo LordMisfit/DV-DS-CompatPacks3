@@ -37,6 +37,15 @@ ACTOR ApprenticeNew : AetheriusMonsterZSC 30000
 	DEATHSOUND "wizard/death"
 	ACTIVESOUND "wizard/active"
 	OBITUARY "%o was spooked by an Apprentice of Darkmoon."
+	dropitem "DoomSpellMana", 256
+	dropitem "DoomSpellMana", 128
+	dropitem "DoomSpellMana", 64
+	dropitem "DoomSpellMana2", 128
+	dropitem "DoomSpellMana2", 64
+	dropitem "DoomSpellMana2", 32
+	dropitem "DoomSpellMana3", 64
+	dropitem "DoomSpellMana3", 32
+	dropitem "DoomSpellMana3", 16
 
 	states
 	{
@@ -1198,6 +1207,8 @@ ACTOR ThrallNew : AetheriusMonsterZSC 30119
 	DEATHSOUND "monster/culdth" 
 	ACTIVESOUND "monster/culact"
 	OBITUARY "%o was killed by a lowly Cultist."
+	dropitem "DoomSpellMana", 224
+	dropitem "DoomSpellMana2", 56
 
 	states 
 	{
@@ -2540,9 +2551,8 @@ ACTOR DEWraithNew : AetheriusMonsterZSC replaces DEWraith 30106
 	MELEESOUND "monster/spratk"
 	PAINSOUND "archvile/pain" 
 	DEATHSOUND "monster/sprdth"
-	OBITUARY "A wraith had it's way with %o."
-	HITOBITUARY "%o got bitten by a wraith too many times."
-	SpawnID 176
+	OBITUARY "A wraith spooked %o to Hell"
+	HITOBITUARY "%o got bitten by a Wraith"
 
 	states 
 	{
