@@ -2553,6 +2553,7 @@ ACTOR DEWraithNew : AetheriusMonsterZSC replaces DEWraith 30106
 	DEATHSOUND "monster/sprdth"
 	OBITUARY "A wraith spooked %o to Hell"
 	HITOBITUARY "%o got bitten by a Wraith"
+	SpawnID 176
 
 	states 
 	{
