@@ -1464,39 +1464,42 @@ ACTOR Rifle : MarineWeapon 31407 // replaces BFG9000
 	Weapon.SlotNumber 2
 	States
 	{
-		FloraDetected: // bonus will be turned into something else
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254)
-			TNT1 A 0 A_CheckFlag("DROPPED","FloraDetectedEnd") // Only a natural spawned weapon will drop extra health bonuses [and a tiny chance for a Max Health Bonus or Seed].
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248)
-			TNT1 A 0 A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254)
-			TNT1 A 0 A_SpawnItemEx("MaxHealthBonusREAL",random(-3,3),random(-3,3),0,random(-1,1),random(-1,1),random(-1,1),0,0,255)
-			TNT1 A 0 A_SpawnItemEx("RandomSeedDropForcedAlways",random(-3,3),random(-3,3),0,random(-1,1),random(-1,1),random(-1,1),0,0,255)
-			TNT1 A 0 A_SpawnItemEx("Backpack",random(-3,3),random(-3,3),0,random(-1,1),random(-1,1),random(-1,1),0,0,254)
-			TNT1 A 0 A_SpawnItemEx("RandomHellcoreWeapon",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG | SXF_NOCHECKPOSITION | SXF_TRANSFERSPECIAL,0,tid)
-		FloraDetectedEnd:
-			TNT1 A 0 
-			TNT1 A 0 A_SpawnItemEx("DiarisLongBow",0,0,0,0,0,0,0,0,254)
-			TNT1 A 0 { if (random(1,256) == 1 && GetCVar("dvds_florawandscandrop") > 0) { A_SpawnItemEx("SapphireWandNew",-12,0,0,0,0,0,0,0,0); } }
-			TNT1 A 0 A_FadeOut(1.0)
-			Loop
-
 		Spawn:
-			TNT1 A 0 NoDelay A_JumpIf(CallACS("CheckCharacterClass") == 2, "FloraDetected")
-		Idle:
-			RIFL A 2 A_JumpIf(CallACS("CheckCharacterClass") == 2, "FloraDetected")
+			TNT1 A 0 NoDelay
+			RIFL A 2
+			{
+				if (CallACS("CheckCharacterClass") == 2)
+				{
+					A_SpawnItemEx("HealthBonus",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION,0,tid);
+					A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64);
+					A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224);
+					A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248);
+					A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254);
+					if (A_CheckFlag("DROPPED","Null")) { }
+					else
+					{
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,64);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,224);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,248);
+						A_SpawnItemEx("HealthBonus",random(-12,12),random(-12,12),0,random(-2,2),random(-2,2),random(-2,2),0,0,254);
+						A_SpawnItemEx("MaxHealthBonusREAL",random(-3,3),random(-3,3),0,random(-1,1),random(-1,1),random(-1,1),0,0,255);
+						A_SpawnItemEx("RandomSeedDropForcedAlways",random(-3,3),random(-3,3),0,random(-1,1),random(-1,1),random(-1,1),0,0,255);
+						A_SpawnItemEx("Backpack",random(-3,3),random(-3,3),0,random(-1,1),random(-1,1),random(-1,1),0,0,254);
+						A_SpawnItemEx("RandomHellcoreWeapon",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG | SXF_NOCHECKPOSITION | SXF_TRANSFERSPECIAL,0,0);
+					}
+					A_SpawnItemEx("DiarisLongBow",0,0,0,0,0,0,0,0,254);
+					if (random(1,256) == 1 && GetCVar("dvds_florawandscandrop") > 0) { A_SpawnItemEx("SapphireWandNew",-12,0,0,0,0,0,0,0,0); }
+					A_FadeOut(1.0);
+				}
+			}
 			Loop
 
 		Select:
@@ -1635,15 +1638,16 @@ ACTOR KDiZDGrenadeLauncher : MarineWeapon 31410 // replaces PlasmaRifle
 	Weapon.Kickback 600
 	States
 	{
-		FloraDetected: // bonus will be turned into something else
-			TNT1 A 0 A_SpawnItemEx("RandomHellcoreWeapon",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG | SXF_NOCHECKPOSITION | SXF_TRANSFERSPECIAL,0,tid)
-			TNT1 A 0 A_FadeOut(1.0)
-			Loop
-
 		Spawn:
-			TNT1 A 0 NoDelay A_JumpIf(CallACS("CheckCharacterClass") == 2, "FloraDetected")
-		Idle:
-			GLAU A 2 A_JumpIf(CallACS("CheckCharacterClass") == 2, "FloraDetected")
+			TNT1 A 0 NoDelay
+			GLAU A 1
+			{
+				if (CallACS("CheckCharacterClass") == 2)
+				{
+					A_SpawnItemEx("RandomHellcoreWeapon",0,0,0,0,0,0,0,SXF_TRANSFERAMBUSHFLAG | SXF_NOCHECKPOSITION | SXF_TRANSFERSPECIAL,0,tid);
+					A_FadeOut(1.0);
+				}
+			}
 			Loop
 
 		Select:
