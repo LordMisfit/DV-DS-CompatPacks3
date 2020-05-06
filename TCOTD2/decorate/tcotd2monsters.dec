@@ -823,6 +823,7 @@ ACTOR ShotgunCultistNew : TommyGunCultistNew 29010
 				A_FaceTarget;
 				user_shotaccuracy = 22.5;
 				user_shotzaccuracy = 0.0;
+				if (user_charmed > 0) { user_shotaccuracy *= 0.667; user_shotzaccuracy *= 0.667; }
 				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(14); user_shotaccuracy = user_shotaccuracy * 13 / 19; user_shotzaccuracy = user_shotzaccuracy * 13 / 19; }
 				else if (levelbehavior > 0 && user_monsterlevel > 100) { A_SetTics(15); user_shotaccuracy = user_shotaccuracy * 14 / 19; user_shotzaccuracy = user_shotzaccuracy * 14 / 19; }
 				else if (levelbehavior > 0 && user_monsterlevel > 80) { A_SetTics(16); user_shotaccuracy = user_shotaccuracy * 15 / 19; user_shotzaccuracy = user_shotzaccuracy * 15 / 19; }

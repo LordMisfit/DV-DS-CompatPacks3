@@ -723,6 +723,7 @@ ACTOR RapidFireTrooper : AetheriusMonsterZSC 3201
 				A_FaceTarget;
 				user_shotaccuracy = 22.5;
 				user_shotzaccuracy = 0.0;
+				if (user_charmed > 0) { user_shotaccuracy *= 0.667; user_shotzaccuracy *= 0.667; }
 				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(7); user_shotaccuracy = user_shotaccuracy * 6 / 9; user_shotzaccuracy = user_shotzaccuracy * 6 / 9; }
 				else if (levelbehavior > 0 && user_monsterlevel > 80) { A_SetTics(8); user_shotaccuracy = user_shotaccuracy * 7 / 9; user_shotzaccuracy = user_shotzaccuracy * 7 / 9; }
 				else if (levelbehavior > 0 && user_monsterlevel > 40) { A_SetTics(9); user_shotaccuracy = user_shotaccuracy * 8 / 9; user_shotzaccuracy = user_shotzaccuracy * 8 / 9; }

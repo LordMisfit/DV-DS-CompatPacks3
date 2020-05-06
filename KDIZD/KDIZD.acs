@@ -1,1 +1,2 @@
 int PlayerTID = 1001;
+global int 21:MiscellaneousVars[]; // ***ARRAY*** For various permenant vars in scripts [AKA THIS IS THE BIG VAR ARRAY OF THIS ACS SCRIPT]
