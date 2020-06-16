@@ -59,7 +59,7 @@ ACTOR SonicFireball : AetheriusProjectileZSC
 }
 ACTOR SonicFireballCrisis : SonicFireball
 {
-	Damage ((2 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((2 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -201,7 +201,7 @@ Actor ClayDevilMissile : DoomImpBallNew
 }
 Actor ClayDevilMissileCrisis : ClayDevilMissile
 {
-	damage ((6 * random(1,4)) * CallACS("CrisisMultiplier"))
+	damage ((6 * random(1,4)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -387,7 +387,7 @@ ACTOR FireBlast : AetheriusProjectileZSC
 }
 ACTOR FireBlastCrisis : FireBlast
 {
-	Damage ((3 * random(1,4)) * CallACS("CrisisMultiplier"))
+	Damage ((3 * random(1,4)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -399,7 +399,7 @@ ACTOR FireBlastCrisis : FireBlast
 		Death:
 			PROJ D 4 BRIGHT 
 			{
-				A_Explode(8*CallACS("CrisisMultiplier"),64,0);
+				A_Explode(8*CrisisMultiplier,64,0);
 			}
 			PROJ EFGH 4 BRIGHT
 			PROJ I 4 BRIGHT A_FadeOut(0.50)
@@ -429,7 +429,7 @@ ACTOR SuperFireBlast : FireBlast
 }
 ACTOR SuperFireBlastCrisis : SuperFireBlast
 {
-	Damage ((24 * random(1,4)) * CallACS("CrisisMultiplier"))
+	Damage ((24 * random(1,4)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -439,7 +439,7 @@ ACTOR SuperFireBlastCrisis : SuperFireBlast
 			}
 			Loop
 		Death:
-			PROJ D 4 BRIGHT A_Explode(256*CallACS("CrisisMultiplier"),128,0)
+			PROJ D 4 BRIGHT A_Explode(256*CrisisMultiplier,128,0)
 			PROJ EFGH 4 BRIGHT
 			PROJ I 4 BRIGHT A_FadeOut(0.50)
 			Stop
@@ -738,7 +738,7 @@ ACTOR ThrallShot1 : AetheriusProjectileZSC
 }
 ACTOR ThrallShot1Crisis : ThrallShot1
 {
-	Damage (((1 * random(1,8)) + random(2,6)) * CallACS("CrisisMultiplier"))
+	Damage (((1 * random(1,8)) + random(2,6)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -1095,7 +1095,7 @@ ACTOR ShadowBall : AetheriusProjectileZSC
 }
 ACTOR ShadowBallCrisis : ShadowBall
 {
-	Damage ((4 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((4 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn: 
@@ -1288,7 +1288,7 @@ ACTOR SoulHarvesterBall : AetheriusProjectileZSC
 }
 ACTOR SoulHarvesterBallCrisis : SoulHarvesterBall
 {
-	Damage ((2 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((2 * random(1,8)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -1704,7 +1704,7 @@ ACTOR DCBMiss1 : AetheriusProjectileZSC
 }
 ACTOR DCBMiss1Crisis : DCBMiss1
 {
-	Damage ((30 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((30 * random(1,8)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -1716,7 +1716,7 @@ ACTOR DCBMiss1Crisis : DCBMiss1
 			}
 			Loop
 		Death:
-			CBTS K 2 BRIGHT A_Explode(140*CallACS("CrisisMultiplier"),140)
+			CBTS K 2 BRIGHT A_Explode(140*CrisisMultiplier,140)
 			CBTS LMNOPQRSTUVW 2 BRIGHT
 			Stop
 	}
@@ -1768,7 +1768,7 @@ ACTOR DCBMiss2 : AetheriusProjectileZSC
 }
 ACTOR DCBMiss2Crisis : DCBMiss2
 {
-	Damage ((15 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((15 * random(1,8)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -1859,7 +1859,7 @@ ACTOR DCBMiss3M : AetheriusProjectileZSC
 }
 ACTOR DCBMiss3MCrisis : DCBMiss3M
 {
-	Damage ((20 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((20 * random(1,8)) * CrisisMultiplier)
 	Radius 10
 	Height 10
 	Speed 28
@@ -1879,7 +1879,7 @@ ACTOR DCBMiss3MCrisis : DCBMiss3M
 			}
 			Loop
 		Death:
-			NULL A 0 A_Explode(64*CallACS("CrisisMultiplier"),64)
+			NULL A 0 A_Explode(64*CrisisMultiplier,64)
 			NULL AAAAAAAAAA 0 A_SpawnItemEx("DCBMiss3ExtraCrisis",0,0,5,random(-5,5),random(-5,5),random(-5,5),random(1,360))
 			FSFX UVW 3
 			Stop
@@ -1940,20 +1940,20 @@ Actor DCBMiss3Extra : AetheriusProjectileZSC
 }
 Actor DCBMiss3ExtraCrisis : DCBMiss3Extra
 {
-	Damage ((2 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((2 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
 			CBTS SS 1 Bright
 			{
 				A_GenerateCrisisParticle;
-				A_Explode(12*CallACS("CrisisMultiplier"),32);
+				A_Explode(12*CrisisMultiplier,32);
 			}
 			NULL A 0 A_Jump(120,1)
 			Loop
 			CBTS SSS 1 Bright
 			{
-				A_Explode(12*CallACS("CrisisMultiplier"),32);
+				A_Explode(12*CrisisMultiplier,32);
 			}
 			CBTS S 1 Bright A_FadeOut
 			Wait

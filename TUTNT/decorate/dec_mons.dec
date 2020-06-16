@@ -256,14 +256,14 @@ ACTOR SGuardianFlameBreath : AetheriusProjectileZSC
 }
 ACTOR SGuardianFlameBreathCrisis : SGuardianFlameBreath
 {
-	Damage (4 * CallACS("CrisisMultiplier"))
+	Damage (4 * CrisisMultiplier)
 	States
 	{
 		Spawn:
 			FRFX ABCDEFGHIJKLMMNOP 3 BRIGHT 
 			{
 				A_GenerateCrisisParticle;
-				A_Explode((4 * CallACS("CrisisMultiplier")), 64, 0, 0, 32);
+				A_Explode((4 * CrisisMultiplier), 64, 0, 0, 32);
 			}
 			Stop
 	}
@@ -760,7 +760,7 @@ ACTOR CatharsiBall : AetheriusProjectileZSC
 }
 ACTOR CatharsiBallCrisis : CatharsiBall
 {
-	Damage (3 * random(1,8) * CallACS("CrisisMultiplier"))
+	Damage (3 * random(1,8) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -997,7 +997,7 @@ ACTOR TNTSpider : MaulotaurBase 10906
 				if (user_canusecrisisatk == 1) 
 				{
 					A_PlayCrisisAtkSound;
-					SetDamage((7+(user_monsterlevel/45))*CallACS("CrisisMultiplier"));
+					SetDamage((7+(user_monsterlevel/45))*CrisisMultiplier);
 				}
 			}
 			MNTR U 2 A_MinotaurCharge
@@ -1068,7 +1068,7 @@ ACTOR MinotaurFX1New : AetheriusProjectileZSC replaces MinotaurFX1
 }
 ACTOR MinotaurFX1Crisis : MinotaurFX1New
 {
-	Damage ((3 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((3 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -1114,7 +1114,7 @@ ACTOR MinotaurFX2New : MinotaurFX1New replaces MinotaurFX2
 }
 ACTOR MinotaurFX2Crisis : MinotaurFX2New 
 {
-	Damage ((4 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((4 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -1126,7 +1126,7 @@ ACTOR MinotaurFX2Crisis : MinotaurFX2New
 		Death:
 			FX13 I 4 Bright 
 			{
-				A_Explode(24*CallACS("CrisisMultiplier"),64);
+				A_Explode(24*CrisisMultiplier,64);
 			}
 			FX13 JKLM 4 Bright
 			Stop
@@ -1201,7 +1201,7 @@ ACTOR MinotaurFX3Crisis : MinotaurFX3New
 		Death:
 			FX13 I 4 Bright 
 			{
-				A_Explode((128*CallACS("CrisisMultiplier")),128);
+				A_Explode((128*CrisisMultiplier),128);
 			}
 			FX13 JKLM 4 Bright
 			Stop
@@ -1354,7 +1354,7 @@ ACTOR SpiderBiteProj : AetheriusEffectProjectile
 }
 ACTOR SpiderBiteProjCrisis : SpiderBiteProj
 {
-	Damage (random(6,14) * CallACS("CrisisMultiplier"))
+	Damage (random(6,14) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -1409,7 +1409,7 @@ ACTOR SpiderBiteProj2 : SpiderBiteProj
 }
 ACTOR SpiderBiteProj2Crisis : SpiderBiteProj2
 {
-	Damage ((random(9,21)) * CallACS("CrisisMultiplier"))
+	Damage ((random(9,21)) * CrisisMultiplier)
 	Speed 33
 	States
 	{

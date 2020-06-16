@@ -53,7 +53,7 @@ actor DemonCubeMissile : AetheriusProjectileZSC
 }
 actor DemonCubeMissileCrisis : DemonCubeMissile
 {
-	Damage ((4 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((4 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -86,7 +86,7 @@ actor KDIZDImpBall : DoomImpBallNew replaces DoomImpBall
 }
 actor KDIZDImpBallCrisis : KDIZDImpBall replaces DoomImpBallCrisis
 {
-	Damage ((3 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((3 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -143,7 +143,7 @@ ACTOR HellsFuryBallCrisis : HellsFuryBall
 	Radius 6
 	Height 8
 	Speed 20
-	Damage ((11 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((11 * random(1,8)) * CrisisMultiplier)
 	Translation 2
 	RenderStyle "ADD"
 	Decal BaronScorch
@@ -234,7 +234,7 @@ ACTOR ZombieRifleBulletTracer : AetheriusBulletTracerZSC
 }
 ACTOR ZombieRifleBulletTracerCrisis : ZombieRifleBulletTracer
 {
-	Damage ((20 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((20 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -313,7 +313,7 @@ ACTOR ShadowBall : AetheriusProjectileZSC
 }
 ACTOR ShadowBallCrisis : ShadowBall
 {
-	Damage ((4 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((4 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn: 
@@ -431,7 +431,7 @@ ACTOR SoulHarvesterBall : AetheriusProjectileZSC
 }
 ACTOR SoulHarvesterBallCrisis : SoulHarvesterBall
 {
-	Damage ((2 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((2 * random(1,8)) * CrisisMultiplier)
 	states
 	{
 		Spawn:
@@ -658,7 +658,7 @@ actor Redstar : AetheriusEffectProjectile
 }
 actor RedstarCrisis : Redstar
 {
-	Damage ((12 * random(1,8)) * CallACS("CrisisMultiplier"))
+	Damage ((12 * random(1,8)) * CrisisMultiplier)
 	States
 	{
 		Spawn:
@@ -1505,20 +1505,20 @@ ACTOR Rifle : MarineWeapon 31407 // replaces BFG9000
 		Select:
 			RIFG A 1 
 			{
-				A_DVDSRaise(CallACS("MiscVarCheckDECORATE",10019)*3);
-				A_DVDSRaise(CallACS("MiscVarCheckDECORATE",10020)*7.5);
-				A_DVDSRaise(CallACS("MiscVarCheckDECORATE",10051)*2);
-				A_DVDSRaise(CallACS("MiscVarCheckDECORATE",10052)*5);
+				A_DVDSRaise(0,10019,3);
+				A_DVDSRaise(0,10020,7.5);
+				A_DVDSRaise(0,10051,2);
+				A_DVDSRaise(0,10052,5);
 				A_DVDSRaise(18);
 			}
 			Loop
 		Deselect:
 			RIFG A 1 
 			{
-				A_DVDSLower(CallACS("MiscVarCheckDECORATE",10019)*3);
-				A_DVDSLower(CallACS("MiscVarCheckDECORATE",10020)*7.5);
-				A_DVDSLower(CallACS("MiscVarCheckDECORATE",10051)*2);
-				A_DVDSLower(CallACS("MiscVarCheckDECORATE",10052)*5);
+				A_DVDSLower(0,10019,3);
+				A_DVDSLower(0,10020,7.5);
+				A_DVDSLower(0,10051,2);
+				A_DVDSLower(0,10052,5);
 				A_DVDSLower(18);
 			}
 			Loop
@@ -1532,7 +1532,7 @@ ACTOR Rifle : MarineWeapon 31407 // replaces BFG9000
 			RIFG A 4
 			{
 				CallACS("StartTensionCountDown");
-				A_SpreadAuraFireBullets(0,0,1,A_GetPlayerAttackDamage(60,1),"NewPuff",FBF_NORANDOM|FBF_NORANDOMPUFFZ,FBF_USEAMMO|FBF_NORANDOM|FBF_NORANDOMPUFFZ,0,"",0,0,1,"RifleAmmo");
+				A_SpreadAuraFireBullets(0,0,1,A_GetPlayerAttackDamage(60,1),"NewPuff",FBF_NORANDOM|FBF_NORANDOMPUFFZ,FBF_NORANDOM|FBF_NORANDOMPUFFZ,0,"",0,0,1,"RifleAmmo");
 			}
 			RIFG BCDCB 2
 			RIFG A 3
