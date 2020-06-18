@@ -548,22 +548,22 @@ States
 Spawn:
 SPRK A 0
 SPRK A 64 Bright
-SPRK B 1 Bright A_SetTranslucent(.8,1)
-SPRK C 1 Bright A_SetTranslucent(.7,1)
-SPRK D 1 Bright A_SetTranslucent(.6,1)
-SPRK E 1 Bright A_SetTranslucent(.5,1)
-SPRK F 1 Bright A_SetTranslucent(.4,1)
-SPRK G 1 Bright A_SetTranslucent(.3,1)
-SPRK H 1 Bright A_SetTranslucent(.2,1)
+SPRK B 1 Bright A_SetTranslucent(0.8,1)
+SPRK C 1 Bright A_SetTranslucent(0.7,1)
+SPRK D 1 Bright A_SetTranslucent(0.6,1)
+SPRK E 1 Bright A_SetTranslucent(0.5,1)
+SPRK F 1 Bright A_SetTranslucent(0.4,1)
+SPRK G 1 Bright A_SetTranslucent(0.3,1)
+SPRK H 1 Bright A_SetTranslucent(0.2,1)
 Stop
 Death:
-SPRK B 1 Bright A_SetTranslucent(.8,1)
-SPRK C 1 Bright A_SetTranslucent(.7,1)
-SPRK D 1 Bright A_SetTranslucent(.6,1)
-SPRK E 1 Bright A_SetTranslucent(.5,1)
-SPRK F 1 Bright A_SetTranslucent(.4,1)
-SPRK G 1 Bright A_SetTranslucent(.3,1)
-SPRK H 1 Bright A_SetTranslucent(.2,1)
+SPRK B 1 Bright A_SetTranslucent(0.8,1)
+SPRK C 1 Bright A_SetTranslucent(0.7,1)
+SPRK D 1 Bright A_SetTranslucent(0.6,1)
+SPRK E 1 Bright A_SetTranslucent(0.5,1)
+SPRK F 1 Bright A_SetTranslucent(0.4,1)
+SPRK G 1 Bright A_SetTranslucent(0.3,1)
+SPRK H 1 Bright A_SetTranslucent(0.2,1)
 Stop
 }
 }
@@ -628,22 +628,22 @@ States
 Spawn:
 SPRK A 0
 SPRK A 24 Bright
-SPRK B 1 Bright A_SetTranslucent(.8,1)
-SPRK C 1 Bright A_SetTranslucent(.7,1)
-SPRK D 1 Bright A_SetTranslucent(.6,1)
-SPRK E 1 Bright A_SetTranslucent(.5,1)
-SPRK F 1 Bright A_SetTranslucent(.4,1)
-SPRK G 1 Bright A_SetTranslucent(.3,1)
-SPRK H 1 Bright A_SetTranslucent(.2,1)
+SPRK B 1 Bright A_SetTranslucent(0.8,1)
+SPRK C 1 Bright A_SetTranslucent(0.7,1)
+SPRK D 1 Bright A_SetTranslucent(0.6,1)
+SPRK E 1 Bright A_SetTranslucent(0.5,1)
+SPRK F 1 Bright A_SetTranslucent(0.4,1)
+SPRK G 1 Bright A_SetTranslucent(0.3,1)
+SPRK H 1 Bright A_SetTranslucent(0.2,1)
 Stop
 Death:
-SPRK B 1 Bright A_SetTranslucent(.8,1)
-SPRK C 1 Bright A_SetTranslucent(.7,1)
-SPRK D 1 Bright A_SetTranslucent(.6,1)
-SPRK E 1 Bright A_SetTranslucent(.5,1)
-SPRK F 1 Bright A_SetTranslucent(.4,1)
-SPRK G 1 Bright A_SetTranslucent(.3,1)
-SPRK H 1 Bright A_SetTranslucent(.2,1)
+SPRK B 1 Bright A_SetTranslucent(0.8,1)
+SPRK C 1 Bright A_SetTranslucent(0.7,1)
+SPRK D 1 Bright A_SetTranslucent(0.6,1)
+SPRK E 1 Bright A_SetTranslucent(0.5,1)
+SPRK F 1 Bright A_SetTranslucent(0.4,1)
+SPRK G 1 Bright A_SetTranslucent(0.3,1)
+SPRK H 1 Bright A_SetTranslucent(0.2,1)
 Stop
 }
 }
@@ -707,22 +707,22 @@ States
 Spawn:
 SPRK A 0
 SPRK A 24 Bright
-SPRK B 1 Bright A_SetTranslucent(.8,1)
-SPRK C 1 Bright A_SetTranslucent(.7,1)
-SPRK D 1 Bright A_SetTranslucent(.6,1)
-SPRK E 1 Bright A_SetTranslucent(.5,1)
-SPRK F 1 Bright A_SetTranslucent(.4,1)
-SPRK G 1 Bright A_SetTranslucent(.3,1)
-SPRK H 1 Bright A_SetTranslucent(.2,1)
+SPRK B 1 Bright A_SetTranslucent(0.8,1)
+SPRK C 1 Bright A_SetTranslucent(0.7,1)
+SPRK D 1 Bright A_SetTranslucent(0.6,1)
+SPRK E 1 Bright A_SetTranslucent(0.5,1)
+SPRK F 1 Bright A_SetTranslucent(0.4,1)
+SPRK G 1 Bright A_SetTranslucent(0.3,1)
+SPRK H 1 Bright A_SetTranslucent(0.2,1)
 Stop
 Death:
-SPRK B 1 Bright A_SetTranslucent(.8,1)
-SPRK C 1 Bright A_SetTranslucent(.7,1)
-SPRK D 1 Bright A_SetTranslucent(.6,1)
-SPRK E 1 Bright A_SetTranslucent(.5,1)
-SPRK F 1 Bright A_SetTranslucent(.4,1)
-SPRK G 1 Bright A_SetTranslucent(.3,1)
-SPRK H 1 Bright A_SetTranslucent(.2,1)
+SPRK B 1 Bright A_SetTranslucent(0.8,1)
+SPRK C 1 Bright A_SetTranslucent(0.7,1)
+SPRK D 1 Bright A_SetTranslucent(0.6,1)
+SPRK E 1 Bright A_SetTranslucent(0.5,1)
+SPRK F 1 Bright A_SetTranslucent(0.4,1)
+SPRK G 1 Bright A_SetTranslucent(0.3,1)
+SPRK H 1 Bright A_SetTranslucent(0.2,1)
 Stop
 }
 }

@@ -671,8 +671,8 @@ Actor SmokeA
     Radius 1
     +Missile +NoGravity +NOINTERACTION
     RenderStyle Translucent
-    Alpha .5
-    Scale .35
+    Alpha 0.5
+    Scale 0.35
     States
     {
     Spawn:
@@ -683,20 +683,20 @@ Actor SmokeA
     	SMK1 H 4 
     	SMK1 G 4 
     	SMK1 F 4 
-    	SMK1 E 2 A_SetTranslucent(.45, 0)
-    	SMK1 E 2 A_SetTranslucent(.4, 0)
-    	SMK1 D 2 A_SetTranslucent(.35, 0)
-    	SMK1 D 2 A_SetTranslucent(.3, 0)
-    	SMK1 C 2 A_SetTranslucent(.25, 0)
-    	SMK1 C 2 A_SetTranslucent(.2, 0)
-    	SMK1 B 1 A_SetTranslucent(.18, 0)
-    	SMK1 B 1 A_SetTranslucent(.16, 0)
-    	SMK1 B 1 A_SetTranslucent(.14, 0)
-    	SMK1 B 1 A_SetTranslucent(.12, 0)
-    	SMK1 A 1 A_SetTranslucent(.1, 0)
-    	SMK1 A 1 A_SetTranslucent(.08, 0)
-    	SMK1 A 1 A_SetTranslucent(.06, 0)
-    	SMK1 A 1 A_SetTranslucent(.04, 0)
+    	SMK1 E 2 A_SetTranslucent(0.45, 0)
+    	SMK1 E 2 A_SetTranslucent(0.4, 0)
+    	SMK1 D 2 A_SetTranslucent(0.35, 0)
+    	SMK1 D 2 A_SetTranslucent(0.3, 0)
+    	SMK1 C 2 A_SetTranslucent(0.25, 0)
+    	SMK1 C 2 A_SetTranslucent(0.2, 0)
+    	SMK1 B 1 A_SetTranslucent(0.18, 0)
+    	SMK1 B 1 A_SetTranslucent(0.16, 0)
+    	SMK1 B 1 A_SetTranslucent(0.14, 0)
+    	SMK1 B 1 A_SetTranslucent(0.12, 0)
+    	SMK1 A 1 A_SetTranslucent(0.1, 0)
+    	SMK1 A 1 A_SetTranslucent(0.08, 0)
+    	SMK1 A 1 A_SetTranslucent(0.06, 0)
+    	SMK1 A 1 A_SetTranslucent(0.04, 0)
         Stop
     }
 }
@@ -713,20 +713,20 @@ Actor SmokeB : SmokeA
     	SMK2 H 4 
     	SMK2 G 4 
     	SMK2 F 4 
-    	SMK2 E 2 A_SetTranslucent(.45, 0)
-    	SMK2 E 2 A_SetTranslucent(.4, 0)
-    	SMK2 D 2 A_SetTranslucent(.35, 0)
-    	SMK2 D 2 A_SetTranslucent(.3, 0)
-    	SMK2 C 2 A_SetTranslucent(.25, 0)
-    	SMK2 C 2 A_SetTranslucent(.2, 0)
-    	SMK2 B 1 A_SetTranslucent(.18, 0)
-    	SMK2 B 1 A_SetTranslucent(.16, 0)
-    	SMK2 B 1 A_SetTranslucent(.14, 0)
-    	SMK2 B 1 A_SetTranslucent(.12, 0)
-    	SMK2 A 1 A_SetTranslucent(.1, 0)
-    	SMK2 A 1 A_SetTranslucent(.08, 0)
-    	SMK2 A 1 A_SetTranslucent(.06, 0)
-    	SMK2 A 1 A_SetTranslucent(.04, 0)
+    	SMK2 E 2 A_SetTranslucent(0.45, 0)
+    	SMK2 E 2 A_SetTranslucent(0.4, 0)
+    	SMK2 D 2 A_SetTranslucent(0.35, 0)
+    	SMK2 D 2 A_SetTranslucent(0.3, 0)
+    	SMK2 C 2 A_SetTranslucent(0.25, 0)
+    	SMK2 C 2 A_SetTranslucent(0.2, 0)
+    	SMK2 B 1 A_SetTranslucent(0.18, 0)
+    	SMK2 B 1 A_SetTranslucent(0.16, 0)
+    	SMK2 B 1 A_SetTranslucent(0.14, 0)
+    	SMK2 B 1 A_SetTranslucent(0.12, 0)
+    	SMK2 A 1 A_SetTranslucent(0.1, 0)
+    	SMK2 A 1 A_SetTranslucent(0.08, 0)
+    	SMK2 A 1 A_SetTranslucent(0.06, 0)
+    	SMK2 A 1 A_SetTranslucent(0.04, 0)
         Stop
     }
 }
@@ -743,20 +743,20 @@ Actor SmokeC : SmokeA
     	SMK3 H 4 
     	SMK3 G 4 
     	SMK3 F 4 
-    	SMK3 E 2 A_SetTranslucent(.45, 0)
-    	SMK3 E 2 A_SetTranslucent(.4, 0)
-    	SMK3 D 2 A_SetTranslucent(.35, 0)
-    	SMK3 D 2 A_SetTranslucent(.3, 0)
-    	SMK3 C 2 A_SetTranslucent(.25, 0)
-    	SMK3 C 2 A_SetTranslucent(.2, 0)
-    	SMK3 B 1 A_SetTranslucent(.18, 0)
-    	SMK3 B 1 A_SetTranslucent(.16, 0)
-    	SMK3 B 1 A_SetTranslucent(.14, 0)
-    	SMK3 B 1 A_SetTranslucent(.12, 0)
-    	SMK3 A 1 A_SetTranslucent(.1, 0)
-    	SMK3 A 1 A_SetTranslucent(.08, 0)
-    	SMK3 A 1 A_SetTranslucent(.06, 0)
-    	SMK3 A 1 A_SetTranslucent(.04, 0)
+    	SMK3 E 2 A_SetTranslucent(0.45, 0)
+    	SMK3 E 2 A_SetTranslucent(0.4, 0)
+    	SMK3 D 2 A_SetTranslucent(0.35, 0)
+    	SMK3 D 2 A_SetTranslucent(0.3, 0)
+    	SMK3 C 2 A_SetTranslucent(0.25, 0)
+    	SMK3 C 2 A_SetTranslucent(0.2, 0)
+    	SMK3 B 1 A_SetTranslucent(0.18, 0)
+    	SMK3 B 1 A_SetTranslucent(0.16, 0)
+    	SMK3 B 1 A_SetTranslucent(0.14, 0)
+    	SMK3 B 1 A_SetTranslucent(0.12, 0)
+    	SMK3 A 1 A_SetTranslucent(0.1, 0)
+    	SMK3 A 1 A_SetTranslucent(0.08, 0)
+    	SMK3 A 1 A_SetTranslucent(0.06, 0)
+    	SMK3 A 1 A_SetTranslucent(0.04, 0)
     Stop
     }
 }
@@ -773,20 +773,20 @@ Actor SmokeD : SmokeA
     	SMK4 H 4 
     	SMK4 G 4 
     	SMK4 F 4 
-    	SMK4 E 2 A_SetTranslucent(.45, 0)
-    	SMK4 E 2 A_SetTranslucent(.4, 0)
-    	SMK4 D 2 A_SetTranslucent(.35, 0)
-    	SMK4 D 2 A_SetTranslucent(.3, 0)
-    	SMK4 C 2 A_SetTranslucent(.25, 0)
-    	SMK4 C 2 A_SetTranslucent(.2, 0)
-    	SMK4 B 1 A_SetTranslucent(.18, 0)
-    	SMK4 B 1 A_SetTranslucent(.16, 0)
-    	SMK4 B 1 A_SetTranslucent(.14, 0)
-    	SMK4 B 1 A_SetTranslucent(.12, 0)
-    	SMK4 A 1 A_SetTranslucent(.1, 0)
-    	SMK4 A 1 A_SetTranslucent(.08, 0)
-    	SMK4 A 1 A_SetTranslucent(.06, 0)
-    	SMK4 A 1 A_SetTranslucent(.04, 0)
+    	SMK4 E 2 A_SetTranslucent(0.45, 0)
+    	SMK4 E 2 A_SetTranslucent(0.4, 0)
+    	SMK4 D 2 A_SetTranslucent(0.35, 0)
+    	SMK4 D 2 A_SetTranslucent(0.3, 0)
+    	SMK4 C 2 A_SetTranslucent(0.25, 0)
+    	SMK4 C 2 A_SetTranslucent(0.2, 0)
+    	SMK4 B 1 A_SetTranslucent(0.18, 0)
+    	SMK4 B 1 A_SetTranslucent(0.16, 0)
+    	SMK4 B 1 A_SetTranslucent(0.14, 0)
+    	SMK4 B 1 A_SetTranslucent(0.12, 0)
+    	SMK4 A 1 A_SetTranslucent(0.1, 0)
+    	SMK4 A 1 A_SetTranslucent(0.08, 0)
+    	SMK4 A 1 A_SetTranslucent(0.06, 0)
+    	SMK4 A 1 A_SetTranslucent(0.04, 0)
     Stop
     }
 }
@@ -803,20 +803,20 @@ Actor SmokeE : SmokeA
     	SMK5 H 4 
     	SMK5 G 4 
     	SMK5 F 4 
-    	SMK5 E 2 A_SetTranslucent(.45, 0)
-    	SMK5 E 2 A_SetTranslucent(.4, 0)
-    	SMK5 D 2 A_SetTranslucent(.35, 0)
-    	SMK5 D 2 A_SetTranslucent(.3, 0)
-    	SMK5 C 2 A_SetTranslucent(.25, 0)
-    	SMK5 C 2 A_SetTranslucent(.2, 0)
-    	SMK5 B 1 A_SetTranslucent(.18, 0)
-    	SMK5 B 1 A_SetTranslucent(.16, 0)
-    	SMK5 B 1 A_SetTranslucent(.14, 0)
-    	SMK5 B 1 A_SetTranslucent(.12, 0)
-    	SMK5 A 1 A_SetTranslucent(.1, 0)
-    	SMK5 A 1 A_SetTranslucent(.08, 0)
-    	SMK5 A 1 A_SetTranslucent(.06, 0)
-    	SMK5 A 1 A_SetTranslucent(.04, 0)
+    	SMK5 E 2 A_SetTranslucent(0.45, 0)
+    	SMK5 E 2 A_SetTranslucent(0.4, 0)
+    	SMK5 D 2 A_SetTranslucent(0.35, 0)
+    	SMK5 D 2 A_SetTranslucent(0.3, 0)
+    	SMK5 C 2 A_SetTranslucent(0.25, 0)
+    	SMK5 C 2 A_SetTranslucent(0.2, 0)
+    	SMK5 B 1 A_SetTranslucent(0.18, 0)
+    	SMK5 B 1 A_SetTranslucent(0.16, 0)
+    	SMK5 B 1 A_SetTranslucent(0.14, 0)
+    	SMK5 B 1 A_SetTranslucent(0.12, 0)
+    	SMK5 A 1 A_SetTranslucent(0.1, 0)
+    	SMK5 A 1 A_SetTranslucent(0.08, 0)
+    	SMK5 A 1 A_SetTranslucent(0.06, 0)
+    	SMK5 A 1 A_SetTranslucent(0.04, 0)
         Stop
     }
 }
@@ -833,20 +833,20 @@ Actor SmokeF : SmokeA
     	SMK6 H 4 
     	SMK6 G 4 
     	SMK6 F 4 
-    	SMK6 E 2 A_SetTranslucent(.45, 0)
-    	SMK6 E 2 A_SetTranslucent(.4, 0)
-    	SMK6 D 2 A_SetTranslucent(.35, 0)
-    	SMK6 D 2 A_SetTranslucent(.3, 0)
-    	SMK6 C 2 A_SetTranslucent(.25, 0)
-    	SMK6 C 2 A_SetTranslucent(.2, 0)
-    	SMK6 B 1 A_SetTranslucent(.18, 0)
-    	SMK6 B 1 A_SetTranslucent(.16, 0)
-    	SMK6 B 1 A_SetTranslucent(.14, 0)
-    	SMK6 B 1 A_SetTranslucent(.12, 0)
-    	SMK6 A 1 A_SetTranslucent(.1, 0)
-    	SMK6 A 1 A_SetTranslucent(.08, 0)
-    	SMK6 A 1 A_SetTranslucent(.06, 0)
-    	SMK6 A 1 A_SetTranslucent(.04, 0)
+    	SMK6 E 2 A_SetTranslucent(0.45, 0)
+    	SMK6 E 2 A_SetTranslucent(0.4, 0)
+    	SMK6 D 2 A_SetTranslucent(0.35, 0)
+    	SMK6 D 2 A_SetTranslucent(0.3, 0)
+    	SMK6 C 2 A_SetTranslucent(0.25, 0)
+    	SMK6 C 2 A_SetTranslucent(0.2, 0)
+    	SMK6 B 1 A_SetTranslucent(0.18, 0)
+    	SMK6 B 1 A_SetTranslucent(0.16, 0)
+    	SMK6 B 1 A_SetTranslucent(0.14, 0)
+    	SMK6 B 1 A_SetTranslucent(0.12, 0)
+    	SMK6 A 1 A_SetTranslucent(0.1, 0)
+    	SMK6 A 1 A_SetTranslucent(0.08, 0)
+    	SMK6 A 1 A_SetTranslucent(0.06, 0)
+    	SMK6 A 1 A_SetTranslucent(0.04, 0)
         Stop
     }
 }
@@ -863,20 +863,20 @@ Actor SmokeG : SmokeA
     	SMK7 H 4 
     	SMK7 G 4 
     	SMK7 F 4 
-    	SMK7 E 2 A_SetTranslucent(.45, 0)
-    	SMK7 E 2 A_SetTranslucent(.4, 0)
-    	SMK7 D 2 A_SetTranslucent(.35, 0)
-    	SMK7 D 2 A_SetTranslucent(.3, 0)
-    	SMK7 C 2 A_SetTranslucent(.25, 0)
-    	SMK7 C 2 A_SetTranslucent(.2, 0)
-    	SMK7 B 1 A_SetTranslucent(.18, 0)
-    	SMK7 B 1 A_SetTranslucent(.16, 0)
-    	SMK7 B 1 A_SetTranslucent(.14, 0)
-    	SMK7 B 1 A_SetTranslucent(.12, 0)
-    	SMK7 A 1 A_SetTranslucent(.1, 0)
-    	SMK7 A 1 A_SetTranslucent(.08, 0)
-    	SMK7 A 1 A_SetTranslucent(.06, 0)
-    	SMK7 A 1 A_SetTranslucent(.04, 0)
+    	SMK7 E 2 A_SetTranslucent(0.45, 0)
+    	SMK7 E 2 A_SetTranslucent(0.4, 0)
+    	SMK7 D 2 A_SetTranslucent(0.35, 0)
+    	SMK7 D 2 A_SetTranslucent(0.3, 0)
+    	SMK7 C 2 A_SetTranslucent(0.25, 0)
+    	SMK7 C 2 A_SetTranslucent(0.2, 0)
+    	SMK7 B 1 A_SetTranslucent(0.18, 0)
+    	SMK7 B 1 A_SetTranslucent(0.16, 0)
+    	SMK7 B 1 A_SetTranslucent(0.14, 0)
+    	SMK7 B 1 A_SetTranslucent(0.12, 0)
+    	SMK7 A 1 A_SetTranslucent(0.1, 0)
+    	SMK7 A 1 A_SetTranslucent(0.08, 0)
+    	SMK7 A 1 A_SetTranslucent(0.06, 0)
+    	SMK7 A 1 A_SetTranslucent(0.04, 0)
         Stop
     }
 }
@@ -893,20 +893,20 @@ Actor SmokeH : SmokeA
     	SMK8 H 4 
     	SMK8 G 4 
     	SMK8 F 4 
-    	SMK8 E 2 A_SetTranslucent(.45, 0)
-    	SMK8 E 2 A_SetTranslucent(.4, 0)
-    	SMK8 D 2 A_SetTranslucent(.35, 0)
-    	SMK8 D 2 A_SetTranslucent(.3, 0)
-    	SMK8 C 2 A_SetTranslucent(.25, 0)
-    	SMK8 C 2 A_SetTranslucent(.2, 0)
-    	SMK8 B 1 A_SetTranslucent(.18, 0)
-    	SMK8 B 1 A_SetTranslucent(.16, 0)
-    	SMK8 B 1 A_SetTranslucent(.14, 0)
-    	SMK8 B 1 A_SetTranslucent(.12, 0)
-    	SMK8 A 1 A_SetTranslucent(.1, 0)
-    	SMK8 A 1 A_SetTranslucent(.08, 0)
-    	SMK8 A 1 A_SetTranslucent(.06, 0)
-    	SMK8 A 1 A_SetTranslucent(.04, 0)
+    	SMK8 E 2 A_SetTranslucent(0.45, 0)
+    	SMK8 E 2 A_SetTranslucent(0.4, 0)
+    	SMK8 D 2 A_SetTranslucent(0.35, 0)
+    	SMK8 D 2 A_SetTranslucent(0.3, 0)
+    	SMK8 C 2 A_SetTranslucent(0.25, 0)
+    	SMK8 C 2 A_SetTranslucent(0.2, 0)
+    	SMK8 B 1 A_SetTranslucent(0.18, 0)
+    	SMK8 B 1 A_SetTranslucent(0.16, 0)
+    	SMK8 B 1 A_SetTranslucent(0.14, 0)
+    	SMK8 B 1 A_SetTranslucent(0.12, 0)
+    	SMK8 A 1 A_SetTranslucent(0.1, 0)
+    	SMK8 A 1 A_SetTranslucent(0.08, 0)
+    	SMK8 A 1 A_SetTranslucent(0.06, 0)
+    	SMK8 A 1 A_SetTranslucent(0.04, 0)
     Stop
     }
 }
@@ -923,20 +923,20 @@ Actor SmokeI : SmokeA
     	SMK9 H 4 
     	SMK9 G 4 
     	SMK9 F 4 
-    	SMK9 E 2 A_SetTranslucent(.45, 0)
-    	SMK9 E 2 A_SetTranslucent(.4, 0)
-    	SMK9 D 2 A_SetTranslucent(.35, 0)
-    	SMK9 D 2 A_SetTranslucent(.3, 0)
-    	SMK9 C 2 A_SetTranslucent(.25, 0)
-    	SMK9 C 2 A_SetTranslucent(.2, 0)
-    	SMK9 B 1 A_SetTranslucent(.18, 0)
-    	SMK9 B 1 A_SetTranslucent(.16, 0)
-    	SMK9 B 1 A_SetTranslucent(.14, 0)
-    	SMK9 B 1 A_SetTranslucent(.12, 0)
-    	SMK9 A 1 A_SetTranslucent(.1, 0)
-    	SMK9 A 1 A_SetTranslucent(.08, 0)
-    	SMK9 A 1 A_SetTranslucent(.06, 0)
-    	SMK9 A 1 A_SetTranslucent(.04, 0)
+    	SMK9 E 2 A_SetTranslucent(0.45, 0)
+    	SMK9 E 2 A_SetTranslucent(0.4, 0)
+    	SMK9 D 2 A_SetTranslucent(0.35, 0)
+    	SMK9 D 2 A_SetTranslucent(0.3, 0)
+    	SMK9 C 2 A_SetTranslucent(0.25, 0)
+    	SMK9 C 2 A_SetTranslucent(0.2, 0)
+    	SMK9 B 1 A_SetTranslucent(0.18, 0)
+    	SMK9 B 1 A_SetTranslucent(0.16, 0)
+    	SMK9 B 1 A_SetTranslucent(0.14, 0)
+    	SMK9 B 1 A_SetTranslucent(0.12, 0)
+    	SMK9 A 1 A_SetTranslucent(0.1, 0)
+    	SMK9 A 1 A_SetTranslucent(0.08, 0)
+    	SMK9 A 1 A_SetTranslucent(0.06, 0)
+    	SMK9 A 1 A_SetTranslucent(0.04, 0)
         Stop
     }
 }

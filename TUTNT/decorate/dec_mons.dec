@@ -53,8 +53,8 @@ ACTOR SourceGuardian : AetheriusBossZSC 16999
 			}
 			CYCL AAAABBBBCCCCDDDD 3 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
-				if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(2); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 90) { A_SetTics(2); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -66,69 +66,69 @@ ACTOR SourceGuardian : AetheriusBossZSC 16999
 			CYCL E 12
 			{
 				A_FaceTarget;
-				if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 150) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(9); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(10); }
-				else if (levelbehavior > 0 && user_monsterlevel > 30) { A_SetTics(11); }
+				if (levelbehavior && user_monsterlevel > 180) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 150) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 90) { A_SetTics(9); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(10); }
+				else if (levelbehavior && user_monsterlevel > 30) { A_SetTics(11); }
 			}
 			CYCL F 8
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(4); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(7); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(4); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(7); }
 				A_FaceTarget;
 
 				A_MonsterCrisisCheck; // Multiple Projectiles
 				A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 16, 0);
-				if (levelbehavior > 0 && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 0, 0); }
+				if (levelbehavior && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 0, 0); }
 			}
 			CYCL E 12
 			{
 				A_FaceTarget;
-				if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 150) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(9); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(10); }
-				else if (levelbehavior > 0 && user_monsterlevel > 30) { A_SetTics(11); }
+				if (levelbehavior && user_monsterlevel > 180) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 150) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 90) { A_SetTics(9); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(10); }
+				else if (levelbehavior && user_monsterlevel > 30) { A_SetTics(11); }
 			}
 			CYCL F 8
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(4); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(7); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(4); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(7); }
 				A_FaceTarget;
 
 				A_MonsterCrisisCheck; // Multiple Projectiles
 				A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, -16, 0);
-				if (levelbehavior > 0 && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 0, 0); }
+				if (levelbehavior && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 0, 0); }
 			}
 			CYCL E 12
 			{
 				A_FaceTarget;
-				if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 150) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(9); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(10); }
-				else if (levelbehavior > 0 && user_monsterlevel > 30) { A_SetTics(11); }
+				if (levelbehavior && user_monsterlevel > 180) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 150) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 90) { A_SetTics(9); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(10); }
+				else if (levelbehavior && user_monsterlevel > 30) { A_SetTics(11); }
 			}
 			CYCL F 8
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(4); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(7); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(4); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(7); }
 				A_FaceTarget;
 				
 				A_MonsterCrisisCheck; // Multiple Projectiles
 				A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 0, 0);
-				if (levelbehavior > 0 && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 8, 0); }
-				if (levelbehavior > 0 && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, -8, 0); }
+				if (levelbehavior && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, 8, 0); }
+				if (levelbehavior && user_monsterlevel > 150) { A_CrisisSpawnProjectile("SourceGuardianDetonator", "SourceGuardianDetonatorCrisis", 64, 0, -8, 0); }
 			}
 			CYCL F 0 BRIGHT A_Jump(64, "Missile1")
 			goto See
@@ -136,29 +136,29 @@ ACTOR SourceGuardian : AetheriusBossZSC 16999
 			CYCL G 12
 			{
 				A_FaceTarget;
-				if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 150) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(9); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(10); }
-				else if (levelbehavior > 0 && user_monsterlevel > 30) { A_SetTics(11); }
+				if (levelbehavior && user_monsterlevel > 180) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 150) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 90) { A_SetTics(9); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(10); }
+				else if (levelbehavior && user_monsterlevel > 30) { A_SetTics(11); }
 			}
 			CYCL HHHHHH 6 BRIGHT 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(4); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(5); }
+				if (levelbehavior && user_monsterlevel > 120) { A_SetTics(4); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(5); }
 				A_FaceTarget;
 
 				A_MonsterCrisisCheck; // Multiple Projectiles
 				A_CrisisSpawnProjectile("CatharsiBall", "CatharsiBallCrisis", 70, 0, 0, 1);	
 				A_CrisisSpawnProjectile("CatharsiBall", "CatharsiBallCrisis", 70, -8, 8, 1);	
 				A_CrisisSpawnProjectile("CatharsiBall", "CatharsiBallCrisis", 70, 8, -8, 1);
-				if (levelbehavior > 0 && user_monsterlevel > 150) 
+				if (levelbehavior && user_monsterlevel > 150) 
 				{
 					A_CrisisSpawnProjectile("CatharsiBall", "CatharsiBallCrisis", 70, -16, 16, 1);	
 					A_CrisisSpawnProjectile("CatharsiBall", "CatharsiBallCrisis", 70, 16, -16, 1);	
 				}
-				if (levelbehavior > 0 && user_monsterlevel > 300) 
+				if (levelbehavior && user_monsterlevel > 300) 
 				{
 					A_CrisisSpawnProjectile("CatharsiBall", "CatharsiBallCrisis", 70, -24, 24, 1);	
 					A_CrisisSpawnProjectile("CatharsiBall", "CatharsiBallCrisis", 70, 24, -24, 1);	
@@ -168,8 +168,8 @@ ACTOR SourceGuardian : AetheriusBossZSC 16999
 		Missile3:
 			CYCL E 6 BRIGHT
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(4); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(5); }
+				if (levelbehavior && user_monsterlevel > 120) { A_SetTics(4); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(5); }
 				A_FaceTarget;
 			}
 		Missile3Loop:
@@ -177,11 +177,11 @@ ACTOR SourceGuardian : AetheriusBossZSC 16999
 			{
 				A_FaceTarget;
 				A_MonsterCrisisCheck; // Single Projectile
-				if (levelbehavior > 0 && user_monsterlevel > 300) 
+				if (levelbehavior && user_monsterlevel > 300) 
 				{
 					A_CrisisSpawnProjectile("SGuardianFlameBreath", "SGuardianFlameBreathCrisis", random(42,46), 0, 2*random(-4,4));
 				}
-				else if (levelbehavior > 0 && user_monsterlevel > 150) 
+				else if (levelbehavior && user_monsterlevel > 150) 
 				{
 					A_CrisisSpawnProjectile("SGuardianFlameBreath", "SGuardianFlameBreathCrisis", random(42,46), 0, 2*random(-4,4));
 				}
@@ -379,7 +379,7 @@ actor SourceLifeSeed : AetheriusCustomInventory 16998
 		Pickup:
 			TNT1 A 0 
 			{
-				if (A_CheckHealthLevels(1) > 0) { return state("Success"); } return state(""); 
+				if (A_CheckHealthLevels(1)) { return state("Success"); } return state(""); 
 			}
 			Fail
 	}
@@ -448,133 +448,133 @@ actor TheSource : AetheriusBossZSC 24999
 		QuakeAttack:
 			SOUR A 35
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(18); }
-				else if (levelbehavior > 0 && user_monsterlevel > 228) { A_SetTics(19); }
-				else if (levelbehavior > 0 && user_monsterlevel > 216) { A_SetTics(20); }
-				else if (levelbehavior > 0 && user_monsterlevel > 204) { A_SetTics(21); }
-				else if (levelbehavior > 0 && user_monsterlevel > 192) { A_SetTics(22); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(23); }
-				else if (levelbehavior > 0 && user_monsterlevel > 168) { A_SetTics(24); }
-				else if (levelbehavior > 0 && user_monsterlevel > 156) { A_SetTics(25); }
-				else if (levelbehavior > 0 && user_monsterlevel > 144) { A_SetTics(26); }
-				else if (levelbehavior > 0 && user_monsterlevel > 132) { A_SetTics(27); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(28); }
-				else if (levelbehavior > 0 && user_monsterlevel > 108) { A_SetTics(29); }
-				else if (levelbehavior > 0 && user_monsterlevel > 96) { A_SetTics(30); }
-				else if (levelbehavior > 0 && user_monsterlevel > 84) { A_SetTics(31); }
-				else if (levelbehavior > 0 && user_monsterlevel > 72) { A_SetTics(32); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(33); }
-				else if (levelbehavior > 0 && user_monsterlevel > 48) { A_SetTics(34); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(18); }
+				else if (levelbehavior && user_monsterlevel > 228) { A_SetTics(19); }
+				else if (levelbehavior && user_monsterlevel > 216) { A_SetTics(20); }
+				else if (levelbehavior && user_monsterlevel > 204) { A_SetTics(21); }
+				else if (levelbehavior && user_monsterlevel > 192) { A_SetTics(22); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(23); }
+				else if (levelbehavior && user_monsterlevel > 168) { A_SetTics(24); }
+				else if (levelbehavior && user_monsterlevel > 156) { A_SetTics(25); }
+				else if (levelbehavior && user_monsterlevel > 144) { A_SetTics(26); }
+				else if (levelbehavior && user_monsterlevel > 132) { A_SetTics(27); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(28); }
+				else if (levelbehavior && user_monsterlevel > 108) { A_SetTics(29); }
+				else if (levelbehavior && user_monsterlevel > 96) { A_SetTics(30); }
+				else if (levelbehavior && user_monsterlevel > 84) { A_SetTics(31); }
+				else if (levelbehavior && user_monsterlevel > 72) { A_SetTics(32); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(33); }
+				else if (levelbehavior && user_monsterlevel > 48) { A_SetTics(34); }
 
 				ACS_Execute(130,0,0,0,0);
 			}
 			SOUR AAAAAAAAA 35 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(18); }
-				else if (levelbehavior > 0 && user_monsterlevel > 228) { A_SetTics(19); }
-				else if (levelbehavior > 0 && user_monsterlevel > 216) { A_SetTics(20); }
-				else if (levelbehavior > 0 && user_monsterlevel > 204) { A_SetTics(21); }
-				else if (levelbehavior > 0 && user_monsterlevel > 192) { A_SetTics(22); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(23); }
-				else if (levelbehavior > 0 && user_monsterlevel > 168) { A_SetTics(24); }
-				else if (levelbehavior > 0 && user_monsterlevel > 156) { A_SetTics(25); }
-				else if (levelbehavior > 0 && user_monsterlevel > 144) { A_SetTics(26); }
-				else if (levelbehavior > 0 && user_monsterlevel > 132) { A_SetTics(27); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(28); }
-				else if (levelbehavior > 0 && user_monsterlevel > 108) { A_SetTics(29); }
-				else if (levelbehavior > 0 && user_monsterlevel > 96) { A_SetTics(30); }
-				else if (levelbehavior > 0 && user_monsterlevel > 84) { A_SetTics(31); }
-				else if (levelbehavior > 0 && user_monsterlevel > 72) { A_SetTics(32); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(33); }
-				else if (levelbehavior > 0 && user_monsterlevel > 48) { A_SetTics(34); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(18); }
+				else if (levelbehavior && user_monsterlevel > 228) { A_SetTics(19); }
+				else if (levelbehavior && user_monsterlevel > 216) { A_SetTics(20); }
+				else if (levelbehavior && user_monsterlevel > 204) { A_SetTics(21); }
+				else if (levelbehavior && user_monsterlevel > 192) { A_SetTics(22); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(23); }
+				else if (levelbehavior && user_monsterlevel > 168) { A_SetTics(24); }
+				else if (levelbehavior && user_monsterlevel > 156) { A_SetTics(25); }
+				else if (levelbehavior && user_monsterlevel > 144) { A_SetTics(26); }
+				else if (levelbehavior && user_monsterlevel > 132) { A_SetTics(27); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(28); }
+				else if (levelbehavior && user_monsterlevel > 108) { A_SetTics(29); }
+				else if (levelbehavior && user_monsterlevel > 96) { A_SetTics(30); }
+				else if (levelbehavior && user_monsterlevel > 84) { A_SetTics(31); }
+				else if (levelbehavior && user_monsterlevel > 72) { A_SetTics(32); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(33); }
+				else if (levelbehavior && user_monsterlevel > 48) { A_SetTics(34); }
 			}
 			goto Missile
 		CometAttack:
 			SOUR A 35
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(18); }
-				else if (levelbehavior > 0 && user_monsterlevel > 228) { A_SetTics(19); }
-				else if (levelbehavior > 0 && user_monsterlevel > 216) { A_SetTics(20); }
-				else if (levelbehavior > 0 && user_monsterlevel > 204) { A_SetTics(21); }
-				else if (levelbehavior > 0 && user_monsterlevel > 192) { A_SetTics(22); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(23); }
-				else if (levelbehavior > 0 && user_monsterlevel > 168) { A_SetTics(24); }
-				else if (levelbehavior > 0 && user_monsterlevel > 156) { A_SetTics(25); }
-				else if (levelbehavior > 0 && user_monsterlevel > 144) { A_SetTics(26); }
-				else if (levelbehavior > 0 && user_monsterlevel > 132) { A_SetTics(27); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(28); }
-				else if (levelbehavior > 0 && user_monsterlevel > 108) { A_SetTics(29); }
-				else if (levelbehavior > 0 && user_monsterlevel > 96) { A_SetTics(30); }
-				else if (levelbehavior > 0 && user_monsterlevel > 84) { A_SetTics(31); }
-				else if (levelbehavior > 0 && user_monsterlevel > 72) { A_SetTics(32); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(33); }
-				else if (levelbehavior > 0 && user_monsterlevel > 48) { A_SetTics(34); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(18); }
+				else if (levelbehavior && user_monsterlevel > 228) { A_SetTics(19); }
+				else if (levelbehavior && user_monsterlevel > 216) { A_SetTics(20); }
+				else if (levelbehavior && user_monsterlevel > 204) { A_SetTics(21); }
+				else if (levelbehavior && user_monsterlevel > 192) { A_SetTics(22); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(23); }
+				else if (levelbehavior && user_monsterlevel > 168) { A_SetTics(24); }
+				else if (levelbehavior && user_monsterlevel > 156) { A_SetTics(25); }
+				else if (levelbehavior && user_monsterlevel > 144) { A_SetTics(26); }
+				else if (levelbehavior && user_monsterlevel > 132) { A_SetTics(27); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(28); }
+				else if (levelbehavior && user_monsterlevel > 108) { A_SetTics(29); }
+				else if (levelbehavior && user_monsterlevel > 96) { A_SetTics(30); }
+				else if (levelbehavior && user_monsterlevel > 84) { A_SetTics(31); }
+				else if (levelbehavior && user_monsterlevel > 72) { A_SetTics(32); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(33); }
+				else if (levelbehavior && user_monsterlevel > 48) { A_SetTics(34); }
 
 				ACS_Execute(131,0,0,0,0);
 			}
 			SOUR AAAAAAAAA 35 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(18); }
-				else if (levelbehavior > 0 && user_monsterlevel > 228) { A_SetTics(19); }
-				else if (levelbehavior > 0 && user_monsterlevel > 216) { A_SetTics(20); }
-				else if (levelbehavior > 0 && user_monsterlevel > 204) { A_SetTics(21); }
-				else if (levelbehavior > 0 && user_monsterlevel > 192) { A_SetTics(22); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(23); }
-				else if (levelbehavior > 0 && user_monsterlevel > 168) { A_SetTics(24); }
-				else if (levelbehavior > 0 && user_monsterlevel > 156) { A_SetTics(25); }
-				else if (levelbehavior > 0 && user_monsterlevel > 144) { A_SetTics(26); }
-				else if (levelbehavior > 0 && user_monsterlevel > 132) { A_SetTics(27); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(28); }
-				else if (levelbehavior > 0 && user_monsterlevel > 108) { A_SetTics(29); }
-				else if (levelbehavior > 0 && user_monsterlevel > 96) { A_SetTics(30); }
-				else if (levelbehavior > 0 && user_monsterlevel > 84) { A_SetTics(31); }
-				else if (levelbehavior > 0 && user_monsterlevel > 72) { A_SetTics(32); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(33); }
-				else if (levelbehavior > 0 && user_monsterlevel > 48) { A_SetTics(34); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(18); }
+				else if (levelbehavior && user_monsterlevel > 228) { A_SetTics(19); }
+				else if (levelbehavior && user_monsterlevel > 216) { A_SetTics(20); }
+				else if (levelbehavior && user_monsterlevel > 204) { A_SetTics(21); }
+				else if (levelbehavior && user_monsterlevel > 192) { A_SetTics(22); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(23); }
+				else if (levelbehavior && user_monsterlevel > 168) { A_SetTics(24); }
+				else if (levelbehavior && user_monsterlevel > 156) { A_SetTics(25); }
+				else if (levelbehavior && user_monsterlevel > 144) { A_SetTics(26); }
+				else if (levelbehavior && user_monsterlevel > 132) { A_SetTics(27); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(28); }
+				else if (levelbehavior && user_monsterlevel > 108) { A_SetTics(29); }
+				else if (levelbehavior && user_monsterlevel > 96) { A_SetTics(30); }
+				else if (levelbehavior && user_monsterlevel > 84) { A_SetTics(31); }
+				else if (levelbehavior && user_monsterlevel > 72) { A_SetTics(32); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(33); }
+				else if (levelbehavior && user_monsterlevel > 48) { A_SetTics(34); }
 			}
 			goto Missile
 		FireBreath:
 			SOUR A 35
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(18); }
-				else if (levelbehavior > 0 && user_monsterlevel > 228) { A_SetTics(19); }
-				else if (levelbehavior > 0 && user_monsterlevel > 216) { A_SetTics(20); }
-				else if (levelbehavior > 0 && user_monsterlevel > 204) { A_SetTics(21); }
-				else if (levelbehavior > 0 && user_monsterlevel > 192) { A_SetTics(22); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(23); }
-				else if (levelbehavior > 0 && user_monsterlevel > 168) { A_SetTics(24); }
-				else if (levelbehavior > 0 && user_monsterlevel > 156) { A_SetTics(25); }
-				else if (levelbehavior > 0 && user_monsterlevel > 144) { A_SetTics(26); }
-				else if (levelbehavior > 0 && user_monsterlevel > 132) { A_SetTics(27); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(28); }
-				else if (levelbehavior > 0 && user_monsterlevel > 108) { A_SetTics(29); }
-				else if (levelbehavior > 0 && user_monsterlevel > 96) { A_SetTics(30); }
-				else if (levelbehavior > 0 && user_monsterlevel > 84) { A_SetTics(31); }
-				else if (levelbehavior > 0 && user_monsterlevel > 72) { A_SetTics(32); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(33); }
-				else if (levelbehavior > 0 && user_monsterlevel > 48) { A_SetTics(34); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(18); }
+				else if (levelbehavior && user_monsterlevel > 228) { A_SetTics(19); }
+				else if (levelbehavior && user_monsterlevel > 216) { A_SetTics(20); }
+				else if (levelbehavior && user_monsterlevel > 204) { A_SetTics(21); }
+				else if (levelbehavior && user_monsterlevel > 192) { A_SetTics(22); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(23); }
+				else if (levelbehavior && user_monsterlevel > 168) { A_SetTics(24); }
+				else if (levelbehavior && user_monsterlevel > 156) { A_SetTics(25); }
+				else if (levelbehavior && user_monsterlevel > 144) { A_SetTics(26); }
+				else if (levelbehavior && user_monsterlevel > 132) { A_SetTics(27); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(28); }
+				else if (levelbehavior && user_monsterlevel > 108) { A_SetTics(29); }
+				else if (levelbehavior && user_monsterlevel > 96) { A_SetTics(30); }
+				else if (levelbehavior && user_monsterlevel > 84) { A_SetTics(31); }
+				else if (levelbehavior && user_monsterlevel > 72) { A_SetTics(32); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(33); }
+				else if (levelbehavior && user_monsterlevel > 48) { A_SetTics(34); }
 
 				ACS_Execute(132,0,0,0,0);
 			}
 			SOUR AAAAAAAAA 35 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(18); }
-				else if (levelbehavior > 0 && user_monsterlevel > 228) { A_SetTics(19); }
-				else if (levelbehavior > 0 && user_monsterlevel > 216) { A_SetTics(20); }
-				else if (levelbehavior > 0 && user_monsterlevel > 204) { A_SetTics(21); }
-				else if (levelbehavior > 0 && user_monsterlevel > 192) { A_SetTics(22); }
-				else if (levelbehavior > 0 && user_monsterlevel > 180) { A_SetTics(23); }
-				else if (levelbehavior > 0 && user_monsterlevel > 168) { A_SetTics(24); }
-				else if (levelbehavior > 0 && user_monsterlevel > 156) { A_SetTics(25); }
-				else if (levelbehavior > 0 && user_monsterlevel > 144) { A_SetTics(26); }
-				else if (levelbehavior > 0 && user_monsterlevel > 132) { A_SetTics(27); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(28); }
-				else if (levelbehavior > 0 && user_monsterlevel > 108) { A_SetTics(29); }
-				else if (levelbehavior > 0 && user_monsterlevel > 96) { A_SetTics(30); }
-				else if (levelbehavior > 0 && user_monsterlevel > 84) { A_SetTics(31); }
-				else if (levelbehavior > 0 && user_monsterlevel > 72) { A_SetTics(32); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(33); }
-				else if (levelbehavior > 0 && user_monsterlevel > 48) { A_SetTics(34); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(18); }
+				else if (levelbehavior && user_monsterlevel > 228) { A_SetTics(19); }
+				else if (levelbehavior && user_monsterlevel > 216) { A_SetTics(20); }
+				else if (levelbehavior && user_monsterlevel > 204) { A_SetTics(21); }
+				else if (levelbehavior && user_monsterlevel > 192) { A_SetTics(22); }
+				else if (levelbehavior && user_monsterlevel > 180) { A_SetTics(23); }
+				else if (levelbehavior && user_monsterlevel > 168) { A_SetTics(24); }
+				else if (levelbehavior && user_monsterlevel > 156) { A_SetTics(25); }
+				else if (levelbehavior && user_monsterlevel > 144) { A_SetTics(26); }
+				else if (levelbehavior && user_monsterlevel > 132) { A_SetTics(27); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(28); }
+				else if (levelbehavior && user_monsterlevel > 108) { A_SetTics(29); }
+				else if (levelbehavior && user_monsterlevel > 96) { A_SetTics(30); }
+				else if (levelbehavior && user_monsterlevel > 84) { A_SetTics(31); }
+				else if (levelbehavior && user_monsterlevel > 72) { A_SetTics(32); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(33); }
+				else if (levelbehavior && user_monsterlevel > 48) { A_SetTics(34); }
 			}
 			goto Missile
 		Pain:
@@ -785,7 +785,7 @@ actor Comet : AetheriusProjectileZSC
 	ExplosionDamage 60
 	ExplosionRadius 120
 	DamageType "Fire"
-	Scale .55
+	Scale 0.55
 	PROJECTILE
 	SeeSound "comet/launch"
 	DeathSound "comet/explosion"
@@ -871,9 +871,9 @@ ACTOR TNTSpider : MaulotaurBase 10906
 			MNTR ABCD 5
 			{
 				A_SetInventory("MaulotaurChargeDefense",0);
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
-				if (levelbehavior > 0 && user_monsterlevel > 45) { A_SetTics(4); }
-				if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(3); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 45) { A_SetTics(4); }
+				if (levelbehavior && user_monsterlevel > 90) { A_SetTics(3); }
 				A_MinotaurRoam;
 			}
 			Loop
@@ -882,9 +882,9 @@ ACTOR TNTSpider : MaulotaurBase 10906
 			MNTR ABCD 5 
 			{
 				A_SetInventory("MaulotaurChargeDefense",0);
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
-				if (levelbehavior > 0 && user_monsterlevel > 45) { A_SetTics(4); }
-				if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(3); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 45) { A_SetTics(4); }
+				if (levelbehavior && user_monsterlevel > 90) { A_SetTics(3); }
 				A_MinotaurChase;
 			}
 			Loop
@@ -895,25 +895,25 @@ ACTOR TNTSpider : MaulotaurBase 10906
 			}
 			MNTR V 10 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 200) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 160) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 80) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 40) { A_SetTics(9); }
+				if (levelbehavior && user_monsterlevel > 200) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 160) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 80) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 40) { A_SetTics(9); }
 				A_FaceTarget;
 			}
 			MNTR W 7
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(6); }
+				if (levelbehavior && user_monsterlevel > 120) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(6); }
 				A_FaceTarget;
 			}
 			MNTR X 12 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 67) { A_SetTics(9); }
-				else if (levelbehavior > 0 && user_monsterlevel > 45) { A_SetTics(10); }
-				else if (levelbehavior > 0 && user_monsterlevel > 23) { A_SetTics(11); }
+				if (levelbehavior && user_monsterlevel > 90) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 67) { A_SetTics(9); }
+				else if (levelbehavior && user_monsterlevel > 45) { A_SetTics(10); }
+				else if (levelbehavior && user_monsterlevel > 23) { A_SetTics(11); }
 
 				A_MonsterCrisisCheck; // Single Projectile
 				A_CrisisSpawnProjectile("SpiderBiteProj2","SpiderBiteProj2Crisis",32,0,CMF_CHECKTARGETDEAD,0,AAPTR_TARGET); //A_MeleeAttack;
@@ -927,23 +927,23 @@ ACTOR TNTSpider : MaulotaurBase 10906
 			}
 			MNTR V 10
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 200) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 160) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 80) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 40) { A_SetTics(9); }
+				if (levelbehavior && user_monsterlevel > 200) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 160) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 80) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 40) { A_SetTics(9); }
 				if (random(1,256) <= 170) { A_MinotaurDecide; }
 			}
 			MNTR Y 4
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 80) { A_SetTics(2); }
-				else if (levelbehavior > 0 && user_monsterlevel > 40) { A_SetTics(3); }
+				if (levelbehavior && user_monsterlevel > 80) { A_SetTics(2); }
+				else if (levelbehavior && user_monsterlevel > 40) { A_SetTics(3); }
 				A_FaceTarget;
 			}
 			MNTR Z 9 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(8); }
+				if (levelbehavior && user_monsterlevel > 120) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(8); }
 				A_MinotaurAtk2("MinotaurFX1","MinotaurFX1Crisis",5*random(1,8),3*random(1,8));
 			}
 			Goto See
@@ -954,25 +954,25 @@ ACTOR TNTSpider : MaulotaurBase 10906
 			}
 			MNTR V 10 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 200) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 160) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 80) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 40) { A_SetTics(9); }
+				if (levelbehavior && user_monsterlevel > 200) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 160) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 80) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 40) { A_SetTics(9); }
 				A_FaceTarget;
 			}
 			MNTR W 7
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(6); }
+				if (levelbehavior && user_monsterlevel > 120) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(6); }
 				A_FaceTarget;
 			}
 			MNTR X 12 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 67) { A_SetTics(9); }
-				else if (levelbehavior > 0 && user_monsterlevel > 45) { A_SetTics(10); }
-				else if (levelbehavior > 0 && user_monsterlevel > 23) { A_SetTics(11); }
+				if (levelbehavior && user_monsterlevel > 90) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 67) { A_SetTics(9); }
+				else if (levelbehavior && user_monsterlevel > 45) { A_SetTics(10); }
+				else if (levelbehavior && user_monsterlevel > 23) { A_SetTics(11); }
 				A_MinotaurAtk3(4*random(1,8), -16, "MinotaurFX2New", "MinotaurFX2Crisis");
 			}
 			Goto See
@@ -983,10 +983,10 @@ ACTOR TNTSpider : MaulotaurBase 10906
 			}
 			MNTR X 12
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 90) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 67) { A_SetTics(9); }
-				else if (levelbehavior > 0 && user_monsterlevel > 45) { A_SetTics(10); }
-				else if (levelbehavior > 0 && user_monsterlevel > 23) { A_SetTics(11); }
+				if (levelbehavior && user_monsterlevel > 90) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 67) { A_SetTics(9); }
+				else if (levelbehavior && user_monsterlevel > 45) { A_SetTics(10); }
+				else if (levelbehavior && user_monsterlevel > 23) { A_SetTics(11); }
 			}
 			Goto Hammer
 		Charge:
@@ -1262,20 +1262,20 @@ ACTOR TNTMiniSpider : AetheriusMonsterZSC 22290
 			MNTR A 0
 			MNTR ABCD 4
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
-				if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(1); }
-				else if (levelbehavior > 0 && user_monsterlevel > 60) { A_SetTics(3); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 120) { A_SetTics(1); }
+				else if (levelbehavior && user_monsterlevel > 60) { A_SetTics(3); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
 		Missile:
 			MNTR A 10 
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 200) { A_SetTics(5); }
-				else if (levelbehavior > 0 && user_monsterlevel > 160) { A_SetTics(6); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(7); }
-				else if (levelbehavior > 0 && user_monsterlevel > 80) { A_SetTics(8); }
-				else if (levelbehavior > 0 && user_monsterlevel > 40) { A_SetTics(9); }
+				if (levelbehavior && user_monsterlevel > 200) { A_SetTics(5); }
+				else if (levelbehavior && user_monsterlevel > 160) { A_SetTics(6); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(7); }
+				else if (levelbehavior && user_monsterlevel > 80) { A_SetTics(8); }
+				else if (levelbehavior && user_monsterlevel > 40) { A_SetTics(9); }
 				A_FaceTarget;
 			}
 			MNTR A 0 A_SkullAttack
@@ -1285,14 +1285,14 @@ ACTOR TNTMiniSpider : AetheriusMonsterZSC 22290
 			TNT1 A 0
 			MNTR VW 3
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(1); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(2); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(1); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(2); }
 				A_FaceTarget;
 			}
 			MNTR X 3
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 240) { A_SetTics(1); }
-				else if (levelbehavior > 0 && user_monsterlevel > 120) { A_SetTics(2); }
+				if (levelbehavior && user_monsterlevel > 240) { A_SetTics(1); }
+				else if (levelbehavior && user_monsterlevel > 120) { A_SetTics(2); }
 
 				A_MonsterCrisisCheck; // Single Projectile
 				A_CrisisSpawnProjectile("SpiderBiteProj","SpiderBiteProjCrisis",16,0,0,CMF_CHECKTARGETDEAD,0,AAPTR_TARGET); //A_MeleeAttack;
@@ -1340,7 +1340,7 @@ ACTOR SpiderBiteProj : AetheriusEffectProjectile
 				if (IsPointerEqual(AAPTR_MASTER, AAPTR_PLAYER1) == TRUE) 
 				{
 					A_StatusEffectChecker(10);
-					if (random(1,user_ailmentmaxchance) <= 7 && user_canafflict > 0)
+					if (random(1,user_ailmentmaxchance) <= 7 && user_canafflict)
 					{
 						ACS_NamedExecuteAlways("BuffTimer",0,8,16,random(35,105)); // Poison for 1-3 seconds [tics] (do not ignore God/Invuln/Mercy-Invuln)
 					}
@@ -1366,7 +1366,7 @@ ACTOR SpiderBiteProjCrisis : SpiderBiteProj
 				if (IsPointerEqual(AAPTR_MASTER, AAPTR_PLAYER1) == TRUE) 
 				{
 					A_StatusEffectChecker(10);
-					if (random(1,user_ailmentmaxchance) <= 7 && user_canafflict > 0)
+					if (random(1,user_ailmentmaxchance) <= 7 && user_canafflict)
 					{
 						ACS_NamedExecuteAlways("BuffTimer",0,8,16, (random(35,105)*CallACS("CrisisMultiplier",5)) ); // Poison for 1-3 seconds [tics] (do not ignore God/Invuln/Mercy-Invuln)
 					}
@@ -1395,7 +1395,7 @@ ACTOR SpiderBiteProj2 : SpiderBiteProj
 			if (IsPointerEqual(AAPTR_MASTER, AAPTR_PLAYER1) == TRUE) 
 			{
 				A_StatusEffectChecker(20);
-				if (random(1,user_ailmentmaxchance) <= 17 && user_canafflict > 0)
+				if (random(1,user_ailmentmaxchance) <= 17 && user_canafflict)
 				{
 					ACS_NamedExecuteAlways("BuffTimer",0,8,16,random(105,175)); // Poison for 3-5 seconds [tics] (do not ignore God/Invuln/Mercy-Invuln)
 				}
@@ -1422,7 +1422,7 @@ ACTOR SpiderBiteProj2Crisis : SpiderBiteProj2
 				if (IsPointerEqual(AAPTR_MASTER, AAPTR_PLAYER1) == TRUE) 
 				{
 					A_StatusEffectChecker(20);
-					if (random(1,user_ailmentmaxchance) <= 17 && user_canafflict > 0)
+					if (random(1,user_ailmentmaxchance) <= 17 && user_canafflict)
 					{
 						ACS_NamedExecuteAlways("BuffTimer",0,8,16, (random(105,175)*CallACS("CrisisMultiplier",5)) ); // Poison for 3-5 seconds [tics] (do not ignore God/Invuln/Mercy-Invuln)
 					}

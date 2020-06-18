@@ -2938,7 +2938,7 @@ actor Comet
   SpawnID 250
   ExplosionDamage 40
   ExplosionRadius 80
-  Scale .55
+  Scale 0.55
   PROJECTILE
   SeeSound "comet/launch"
   DeathSound "comet/explosion"
@@ -3006,7 +3006,7 @@ actor CometDeathGlow : CometTail
 
 actor OrbitCometTail : CometTail
 {
-    Scale .5
+    Scale 0.5
 }
 
 //********************
@@ -3015,7 +3015,7 @@ actor OrbitComet : Comet
 {
   SeeSound ""
   +NOCLIP
-  Scale .28
+  Scale 0.28
   Speed 5
   States
   {

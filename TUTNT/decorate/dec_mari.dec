@@ -95,7 +95,7 @@ ACTOR PistolMarine : BaseAllyMarine 30001
 			}
 			ALY2 AAAABBBBCCCCDDDD 1	
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -150,7 +150,7 @@ ACTOR ShotgunMarine : BaseAllyMarine 30002
 			}
 			ALY5 AAAABBBBCCCCDDDD 1
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -215,7 +215,7 @@ ACTOR SuperShotgunMarine : BaseAllyMarine 30003
 			}
 			AL11 AAAABBBBCCCCDDDD 1
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -284,7 +284,7 @@ ACTOR ChaingunMarine : BaseAllyMarine 30004
 			}
 			ALY4 AAAABBBBCCCCDDDD 1
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -344,7 +344,7 @@ ACTOR RocketMarine : BaseAllyMarine 30005
 			}
 			ALY9 AAAABBBBCCCCDDDD 1
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -405,7 +405,7 @@ ACTOR PlasmaRifleMarine : BaseAllyMarine 30006
 			}
 			ALY8 AAAABBBBCCCCDDDD 1
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -464,7 +464,7 @@ ACTOR RailgunMarine : BaseAllyMarine 30007
 			}
 			AL12 AAAABBBBCCCCDDDD 1
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 			Loop
@@ -595,7 +595,7 @@ ACTOR BFGMarine : BaseAllyMarine 30009
 			}
 			AL10 AAAABBBBCCCCDDDD 1
 			{
-				if (levelbehavior > 0 && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
+				if (levelbehavior && user_monsterlevel > 60) { A_ChangeFlag("AVOIDMELEE",1); }
 				A_DVDSChase("Melee","Missile",0,1,3,1,1);
 			}
 		Loop
