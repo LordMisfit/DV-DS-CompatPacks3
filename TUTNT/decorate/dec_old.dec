@@ -2572,27 +2572,28 @@ actor SoulHarvester 3117
 
 actor SoulHarvesterBall
 {
-    Radius 8
-    Height 6
-    Scale 0.4
-    Speed 9
-    Damage 2
-    +SEEKERMISSILE
-    PROJECTILE
-    Renderstyle ADD
-    SeeSound "harvester/scream"
-    DeathSound "imp/shotx"
+	Tag "Harvester Fireball"
+	Radius 8
+	Height 6
+	Scale 0.4
+	Speed 9
+	Damage 2
+	+SEEKERMISSILE
+	PROJECTILE
+	Renderstyle ADD
+	SeeSound "harvester/scream"
+	DeathSound "imp/shotx"
 	Decal DoomImpScorch
-    States
-    {
-    Spawn:
-    	SHBA A  0 Bright A_SpawnItemEx("SoulBallTrail", 0, 0, 0, 0, 0, 0, 180, 128)
-        SHBA AB 2 Bright A_SeekerMissile (10,20)
-        Loop
-    Death:
-        SHBA CDEFGHIJKL 4 Bright
-        Stop
-    }
+	States
+	{
+		Spawn:
+			SHBA A  0 Bright A_SpawnItemEx("SoulBallTrail", 0, 0, 0, 0, 0, 0, 180, 128)
+			SHBA AB 2 Bright A_SeekerMissile (10,20)
+			Loop
+		Death:
+			SHBA CDEFGHIJKL 4 Bright
+			Stop
+	}
 }
 	
 actor SoulHarvesterGhost
@@ -3654,6 +3655,7 @@ ACTOR Shadowtorso
 //===========================================================================
 ACTOR ShadowBall
 {
+	Tag "Shadow Ball"
 	Radius 6
 	Height 8
 	Speed 12

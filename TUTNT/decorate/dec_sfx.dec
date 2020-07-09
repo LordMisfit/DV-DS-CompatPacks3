@@ -62,30 +62,31 @@ actor Spawner_Snow : Spawner_SkyboxComet 19022
 
 actor CometSmall
 {
-    Radius 6
-    Height 8
-    Speed 10
-    Damage 5
-    SpawnID 251
-    ExplosionDamage 40
-    ExplosionRadius 80
-    Scale 0.166
-    PROJECTILE
-    SeeSound "comet/launch"
-    DeathSound "comet/explosion"
-    MissileType CometSmallTail
-    MissileHeight 0
-    States
-    {
-    Spawn:
-        COMT AAAABBBBCCCC 1 Bright A_MissileAttack
-        Loop
-    Death:
-        COMT D 3 Bright A_CustomMissile("CometSmallDeathGlow", 0, 0, 0)
-        COMT E 3 Bright 
-        COMT E 0 A_CustomMissile("CometSmallDeath", 0, 0, 0)
-        Stop
-    }
+	Tag "Comet"
+	Radius 6
+	Height 8
+	Speed 10
+	Damage 5
+	SpawnID 251
+	ExplosionDamage 40
+	ExplosionRadius 80
+	Scale 0.166
+	PROJECTILE
+	SeeSound "comet/launch"
+	DeathSound "comet/explosion"
+	MissileType CometSmallTail
+	MissileHeight 0
+	States
+	{
+		Spawn:
+			COMT AAAABBBBCCCC 1 Bright A_MissileAttack
+			Loop
+		Death:
+			COMT D 3 Bright A_CustomMissile("CometSmallDeathGlow", 0, 0, 0)
+			COMT E 3 Bright 
+			COMT E 0 A_CustomMissile("CometSmallDeath", 0, 0, 0)
+			Stop
+	}
 }
 
 //********************

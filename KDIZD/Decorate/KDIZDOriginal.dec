@@ -32,6 +32,7 @@ ACTOR BruiserDemonSpawner : RandomSpawner2 { DropItem BruiserDemon 255 }
 ACTOR ChainsawZombie : RandomSpawner2 { DropItem ChainsawZombieNew 255 }
 actor DemonCubeMissile : AetheriusProjectileZSC
 {
+	Tag "SparkFire"
 	Radius 8
 	Height 8
 	Speed 18
@@ -70,6 +71,7 @@ actor DemonCubeMissileCrisis : DemonCubeMissile
 
 actor KDIZDImpBall : DoomImpBallNew replaces DoomImpBall
 {
+	Tag "Imp Fireball"
 	RENDERSTYLE ADD
 	ALPHA 0.7
 	MissileType Ball1Trail
@@ -121,6 +123,7 @@ actor Ball1Trail
 
 ACTOR HellsFuryBall : BaronBallNew
 {
+	Tag "Fury's Plasma"
 	Radius 6
 	Height 8
 	Speed 20
@@ -200,6 +203,7 @@ ACTOR NightmareWisp
 
 ACTOR ZombieRifleBulletTracer : AetheriusBulletTracerZSC
 {
+	Tag "shot"
 	Damage 20
 	Damagetype "Bullet"
 	Radius 1
@@ -287,6 +291,7 @@ ACTOR Shadowtorso
 //===========================================================================
 ACTOR ShadowBall : AetheriusProjectileZSC
 {
+	Tag "Shadow Ball"
 	Radius 6
 	Height 8
 	Speed 12
@@ -404,6 +409,7 @@ ACTOR SoulHarvester : RandomSpawner2 { DropItem SoulHarvesterNew 255 }
 
 ACTOR SoulHarvesterBall : AetheriusProjectileZSC
 {
+	Tag "Harvester Fireball"
 	Damage (2 * random(1,8))
 	Radius 8
 	Height 6
@@ -488,6 +494,7 @@ ACTOR SoulBallTrail
 
 actor Portal1 : AetheriusProjectileZSC
 {
+	Tag "Red Star"
 	var int user_loops; var int user_maxloops;
 	obituary "%o was eradicated by the Deimos Guardian."
 	health 400
@@ -604,6 +611,7 @@ actor Portal1Crisis : Portal1
 
 actor Redstar : AetheriusEffectProjectile
 {
+	Tag "Red Star"
 	Radius 10
 	Height 20
 	Speed 13
@@ -716,6 +724,7 @@ actor RedstarCrisis : Redstar
 
 ACTOR Portal2 : AetheriusProjectileZSC
 {
+	Tag "Red Star"
 	Radius 8
 	Height 8
 	Speed 0
@@ -1426,6 +1435,7 @@ ACTOR NewPuff : BulletPuff
 
 ACTOR Puff2 : AetheriusPuffZSC
 {
+	Tag "shot"
 	PROJECTILE
 	+NOCLIP
 	Mass 1
@@ -1800,6 +1810,7 @@ ACTOR GrenadeCasing : PistolCasing
 
 ACTOR KDiZDGrenade : AetheriusProjectileZSC // replaces PlasmaBall
 {
+	Tag "Grenade"
 	Radius 11
 	Height 8
 	Speed 20
@@ -1849,6 +1860,7 @@ ACTOR KDiZDGrenadeNoAOE : KDiZDGrenade // replaces PlasmaBall
 }
 ACTOR KDiZDGrenade2 : AetheriusProjectileZSC
 {
+	Tag "Grenade"
 	Radius 11
 	Height 8
 	Speed 35

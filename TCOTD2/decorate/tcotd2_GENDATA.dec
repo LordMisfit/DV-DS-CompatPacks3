@@ -31,6 +31,7 @@ actor BulletPuff2 : BulletPuff // Bullet sparks
 }
 ACTOR SonicFireball : AetheriusProjectileZSC
 {
+	Tag "Clay Devil Sonicball"
 	Damage (2 * random(1,8))
 	Radius 10
 	Height 10
@@ -171,6 +172,7 @@ actor WHSMOKE
 
 Actor ClayDevilMissile : DoomImpBallNew
 {
+	Tag "Clay Devil Fireball"
 	damage (6 * random(1,4))
 	height 8
 	radius 6
@@ -363,6 +365,7 @@ ACTOR AoDGhost
 
 ACTOR FireBlast : AetheriusProjectileZSC
 {
+	Tag "Apprentice FireBlast"
 	Damage (3 * random(1,4))
 	Speed 25
 	Scale 0.75
@@ -409,6 +412,7 @@ ACTOR FireBlastCrisis : FireBlast
 
 ACTOR SuperFireBlast : FireBlast
 {
+	Tag "Apprentice Super FireBlast"
 	Damage (24 * random(1,4))
 	Speed 16
 	Scale 1.5
@@ -1069,6 +1073,7 @@ ACTOR Shadow // 3126
 
 ACTOR ShadowBall : AetheriusProjectileZSC
 {
+	Tag "Shadow Ball"
 	Radius 6
 	Height 8
 	Speed 12
@@ -1261,6 +1266,7 @@ ACTOR SoulHarvester // 3117
 
 ACTOR SoulHarvesterBall : AetheriusProjectileZSC
 {
+	Tag "Harvester Fireball"
 	Damage (2 * random(1,8))
 	Radius 8
 	Height 6
@@ -1676,6 +1682,7 @@ ACTOR DarkCyberGhostD : DarkCyberGhostA
 //************************************
 ACTOR DCBMiss1 : AetheriusProjectileZSC
 {
+	Tag "Dark BFG"
 	Damage (30 * random(1,8))
 	Radius 12
 	Height 12
@@ -1743,6 +1750,7 @@ ACTOR DCBM1Trail : AetheriusProjectileZSC
 
 ACTOR DCBMiss2 : AetheriusProjectileZSC
 {
+	Tag "Dark Rocket"
 	Damage (15 * random(1,8))
 	Radius 12
 	Height 8
@@ -1785,6 +1793,7 @@ ACTOR DCBMiss2Crisis : DCBMiss2
 
 ACTOR DCBMiss3 : AetheriusProjectileZSC
 {
+	Tag "Apocalypse Firewave"
 	Damage (0 * random(1,8))
 	Radius 1
 	Height 1
@@ -1832,6 +1841,7 @@ ACTOR DCBMiss3Crisis : DCBMiss3
 
 ACTOR DCBMiss3M : AetheriusProjectileZSC
 {
+	Tag "Apocalypse Firewave"
 	Damage (20 * random(1,8))
 	Radius 10
 	Height 10
@@ -1908,6 +1918,7 @@ ACTOR DCBMiss3MG : AetheriusProjectileZSC
 
 Actor DCBMiss3Extra : AetheriusProjectileZSC
 {
+	Tag "Apocalypse Firewave"
 	Damage (2 * random(1,8))
 	Projectile
 	+RIPPER
@@ -2032,6 +2043,8 @@ actor Vulgar : DoomImp
 
 ACTOR VulgarShot : AetheriusProjectileZSC
 {
+	Tag "Vulgar Poison Blast"
+	DamageType "Poison"
 	Radius 8
 	Height 16
 	Speed 10

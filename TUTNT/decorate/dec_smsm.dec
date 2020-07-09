@@ -14,6 +14,7 @@ Mario_Hecke
 
 ACTOR Mario_Blume 22257
 {
+	Tag "Nipper"
 	Height 32
 	Radius 32
 	Health 20 
@@ -38,6 +39,7 @@ ACTOR Mario_Blume 22257
 
 ACTOR Mario_Piranha 22258
 {
+	Tag "Piranha Plant"
 	Height 32
 	Radius 32
 	Health 20 
@@ -62,6 +64,7 @@ ACTOR Mario_Piranha 22258
 
 ACTOR Mario_Koopa 22259
 {
+	Tag "Koopa Troopa"
 	Height 64
 	Radius 32
 	Health 20 
@@ -162,6 +165,7 @@ Mario_Looker
 
 actor MarioCoin : FakeInventory 22265
 {
+	Tag "Coin"
 	+NoGravity
 	Radius 32
 	Height 32

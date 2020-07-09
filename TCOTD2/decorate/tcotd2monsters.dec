@@ -39,13 +39,10 @@ ACTOR ApprenticeNew : AetheriusMonsterZSC 30000
 	OBITUARY "%o was spooked by an Apprentice of Darkmoon."
 	dropitem "DoomSpellMana", 256
 	dropitem "DoomSpellMana", 128
-	dropitem "DoomSpellMana", 64
 	dropitem "DoomSpellMana2", 128
 	dropitem "DoomSpellMana2", 64
-	dropitem "DoomSpellMana2", 32
 	dropitem "DoomSpellMana3", 64
 	dropitem "DoomSpellMana3", 32
-	dropitem "DoomSpellMana3", 16
 
 	states
 	{
@@ -248,6 +245,7 @@ ACTOR ApprenticeNew : AetheriusMonsterZSC 30000
 
 ACTOR SpiderBiteProj : AetheriusEffectProjectile
 {
+	Tag "Bite"
 	Damage (random(6,14))
 	Radius 1
 	Height 1
@@ -397,6 +395,7 @@ ACTOR MiniSpiderNew : AetheriusMonsterZSC 22290
 
 ACTOR SpiderBiteProj2 : SpiderBiteProj
 {
+	Tag "Bite"
 	Damage (random(9,21))
 	Speed 33
 	Obituary "%o was horribly poisoned by the bite of a giant spider"
@@ -555,6 +554,7 @@ ACTOR LargeSpiderNew : AetheriusMonsterZSC 22291
 // Bullet Tracers
 ACTOR TCOTDBulletTracer : AetheriusBulletTracerZSC
 {
+	Tag "shot"
 	Damage ((Random(4,6) * Random(1,2)))
 	Damagetype "Bullet"
 	Radius 1
@@ -1087,6 +1087,7 @@ ACTOR HellHoundNew : AetheriusMonsterZSC 30121
 
 ACTOR DogFireNew : AetheriusProjectileZSC replaces DogFire
 {
+	Tag "Hellhound FireBreath"
 	Radius 2
 	Height 4
 	Speed 16
@@ -1610,6 +1611,8 @@ ACTOR SirenNightmareNew : NightmareNew 31111
 
 ACTOR VulgarShotNew : AetheriusEffectProjectile
 {
+	Tag "Vulgar Poison Blast"
+	DamageType "Poison"
 	Damage (4 * random(1,8))
 	Radius 8
 	Height 16
@@ -2646,6 +2649,7 @@ ACTOR DEWraithNew : AetheriusMonsterZSC replaces DEWraith 30106
 
 actor ButcherBarfNew : AetheriusEffectProjectile replaces ButcherBarf
 {
+	Tag "Butcher's Barf"
 	Damage (3 * random(4,9))
 	Mass 1
 	Radius 8
@@ -2730,6 +2734,7 @@ actor ButcherBarfCrisis : ButcherBarfNew
 
 actor CleaverNew : AetheriusEffectProjectile replaces Cleaver
 { 
+	Tag "Butcher's Cleaver"
 	damage (2 * random(5,13))
 	decal GarScorch
 	radius 6
