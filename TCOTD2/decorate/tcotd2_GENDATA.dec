@@ -721,6 +721,7 @@ ACTOR Thrall // 30119
 
 ACTOR ThrallShot1 : AetheriusProjectileZSC
 {
+	Tag "Ice Shard"
 	Damage ((1 * random(1,8)) + random(2,6))
 	Radius 4
 	Height 6
@@ -1688,6 +1689,7 @@ ACTOR DCBMiss1 : AetheriusProjectileZSC
 	Height 12
 	Speed 16
 	PROJECTILE
+	DamageType "BFG"
 	+SeekerMissile
 	+ExtremeDeath
 	Renderstyle Add

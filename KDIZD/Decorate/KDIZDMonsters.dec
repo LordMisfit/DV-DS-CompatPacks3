@@ -1492,7 +1492,7 @@ ACTOR Magmantis : AetheriusMonsterZSC 26660
 	//$Angled
 	//$Color 12
 	//$Category "KDIZD Monsters"
-	Tag "\cfMagmantis, Guardian of Deimos\c-"
+	Tag "Magmantis, Guardian of Deimos"
 
 	Health 30000 // 12000
 	Radius 120

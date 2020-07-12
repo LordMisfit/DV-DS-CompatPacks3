@@ -3,7 +3,7 @@
 //////////////////////
 ACTOR SourceGuardian : AetheriusBossZSC 16999 
 {
-	Tag "\cgGuardian of the Source"
+	Tag "Source Guardian"
 	SpawnID 239
 	Health 9600 // 1200
 	Mass 80000 // 8000
@@ -395,7 +395,7 @@ actor SourceLifeSeed : AetheriusCustomInventory 16998
 
 actor TheSource : AetheriusBossZSC 24999
 {
-	Tag "\cfThe Source of All Evil"
+	Tag "The Source of All Evil"
 	health 450000 // 15000
 	radius 256 // 128
 	height 256 // 128
