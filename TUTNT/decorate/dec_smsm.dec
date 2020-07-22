@@ -110,6 +110,7 @@ Mario_Blubb2
 
 ACTOR Mario_Yellow 22262
 {
+	Tag "Pokey"
 	Height 64
 	Radius 32
 	Health 20 
