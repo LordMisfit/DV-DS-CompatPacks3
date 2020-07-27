@@ -305,6 +305,7 @@ ACTOR ShadowBall : AetheriusProjectileZSC
 	MissileType ShadowTrail
 	Missileheight 0
 	Decal DoomImpScorch
+	DamageType "Dark"
 	States
 	{
 	Spawn: 
@@ -421,6 +422,7 @@ ACTOR SoulHarvesterBall : AetheriusProjectileZSC
 	SEESOUND "harvester/scream"
 	DEATHSOUND "imp/shotx"
 	Decal DoomImpScorch
+	DamageType "Fire"
 	states
 	{
 		Spawn:

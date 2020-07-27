@@ -2584,6 +2584,7 @@ actor SoulHarvesterBall
 	SeeSound "harvester/scream"
 	DeathSound "imp/shotx"
 	Decal DoomImpScorch
+	DamageType "Fire"
 	States
 	{
 		Spawn:
@@ -3667,6 +3668,7 @@ ACTOR ShadowBall
 	SeeSound "Shadow/attack"
 	DeathSound "imp/shotx"
 	Decal DoomImpScorch
+	DamageType "Dark"
 	States
 	{
 	Spawn: 
