@@ -44,6 +44,7 @@ ACTOR SonicFireball : AetheriusProjectileZSC
 	RenderStyle Add
 	Alpha 0.7
 	SeeSound "zzz1"
+	DamageType "Fire"
 	States
 	{
 		Spawn:
