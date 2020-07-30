@@ -218,6 +218,7 @@ script 806 OPEN {
 	}
 }
 
+/*
 script 807 (void) net {
 	if (locations == 1) {	
 		Thing_Remove(31001);
@@ -229,3 +230,4 @@ script 807 (void) net {
 		hudmessagebold(s:"Action indicators: ON"; 1, 0, -1, 0.5, 0.5, 0.5, 0.5);
 	}
 }
+*/
