@@ -1821,7 +1821,7 @@ ACTOR DCBMiss3 : AetheriusProjectileZSC
 			Loop
 		Death:
 			FSFX NOPQRSTNOPQRST 3
-			FSFX Z 0 A_CustomMissile("DCBMiss3M",0,0,180)
+			FSFX Z 0 A_CustomMissile("DCBMiss3M",0,0,180,CMF_TRACKOWNER)
 			Stop
 	}
 }
@@ -1838,7 +1838,7 @@ ACTOR DCBMiss3Crisis : DCBMiss3
 			Loop
 		Death:
 			FSFX NOPQRSTNOPQRST 3
-			FSFX Z 0 A_CustomMissile("DCBMiss3MCrisis",0,0,180)
+			FSFX Z 0 A_CustomMissile("DCBMiss3MCrisis",0,0,180,CMF_TRACKOWNER)
 			Stop
 	}
 }
@@ -1866,8 +1866,8 @@ ACTOR DCBMiss3M : AetheriusProjectileZSC
 			}	
 			Loop
 		Death:
-			NULL A 0 A_Explode(64,64)
-			NULL AAAAAAAAAA 0 A_SpawnItemEx("DCBMiss3Extra",0,0,5,random(-5,5),random(-5,5),random(-5,5),random(1,360))
+			NULL A 0 A_Explode(64,64,0)
+			NULL AAAAAAAAAA 0 A_SpawnItemEx("DCBMiss3Extra", 0, 0, 5, random(-5,5), random(-5,5), random(-5,5), random(1,360), SXF_SETTARGET)
 			FSFX UVW 3
 			Stop
 	}
@@ -1895,7 +1895,7 @@ ACTOR DCBMiss3MCrisis : DCBMiss3M
 			Loop
 		Death:
 			NULL A 0 A_Explode(64*CrisisMultiplier,64)
-			NULL AAAAAAAAAA 0 A_SpawnItemEx("DCBMiss3ExtraCrisis",0,0,5,random(-5,5),random(-5,5),random(-5,5),random(1,360))
+			NULL AAAAAAAAAA 0 A_SpawnItemEx("DCBMiss3ExtraCrisis", 0, 0, 5, random(-5,5), random(-5,5), random(-5,5), random(1,360), SXF_SETTARGET)
 			FSFX UVW 3
 			Stop
 	}
@@ -1939,13 +1939,13 @@ Actor DCBMiss3Extra : AetheriusProjectileZSC
 		Spawn:
 			CBTS SS 1 Bright 
 			{
-				A_Explode(12,32);
+				A_Explode(12,32,0);
 			}
 			NULL A 0 A_Jump(120,1)
 			Loop
 			CBTS SSS 1 Bright
 			{
-				A_Explode(12,32);
+				A_Explode(12,32,0);
 			}
 			CBTS S 1 Bright A_FadeOut
 			Wait
