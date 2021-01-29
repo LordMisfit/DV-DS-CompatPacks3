@@ -61,7 +61,7 @@ ACTOR AdolfHitlerDS : AetheriusBossZSC 10917
 			HTLR E 20 Bright A_FaceTarget
 			HTLR E 0 Bright A_MonsterRefire(10,"See")
 
-		Attack:
+		Missile1:
 			HTLR F 4 Bright
 			{
 				if (levelbehavior && user_monsterlevel > 180) { A_SetTics(2); }
@@ -83,10 +83,10 @@ ACTOR AdolfHitlerDS : AetheriusBossZSC 10917
 				}
 	
 				user_shotsfired += 1;
-				If (A_JumpIf(user_shotsfired > user_shotsfiredmax, "EndMissile")) { return state("EndMissile"); }
+				If (A_JumpIf(user_shotsfired > user_shotsfiredmax, "MissileEnd")) { return state("MissileEnd"); }
 				return state("");
 			}
-			HTLR F 0 Bright A_MonsterRefire(10,"EndMissile")
+			HTLR F 0 Bright A_MonsterRefire(10,"MissileEnd")
 			HTLR G 4 Bright
 			{
 				if (levelbehavior && user_monsterlevel > 180) { A_SetTics(2); }
@@ -108,13 +108,13 @@ ACTOR AdolfHitlerDS : AetheriusBossZSC 10917
 				}
 	
 				user_shotsfired += 1;
-				If (A_JumpIf(user_shotsfired > user_shotsfiredmax, "EndMissile")) { return state("EndMissile"); }
+				If (A_JumpIf(user_shotsfired > user_shotsfiredmax, "MissileEnd")) { return state("MissileEnd"); }
 				return state("");
 			}
-			HTLR G 1 Bright A_MonsterRefire(10,"EndMissile")
-			goto Attack
+			HTLR G 1 Bright A_MonsterRefire(10,"MissileEnd")
+			goto Missile1
 
-		EndMissile:
+		MissileEnd:
 			TNT1 A 0 { user_shotsfired = 0; }
 			HTLR G 0 A_FaceTarget
 			Goto See

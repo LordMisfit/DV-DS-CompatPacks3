@@ -106,7 +106,10 @@ Actor ClayDevil
 	+FLOORCLIP
 	states
 	{
-		PAIN.Shock:
+		Pain.Thunder:
+		Pain.Shock:
+		Pain.Lightning:
+		Pain.Electric:
 			7ZAP AAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("ShockHuman",random(-1,1),random(-1,1),random(0,3))
 			7ZAP A 4 A_Pain
 			7ZAP A 0 A_JumpIfHealthLower(20,2)
@@ -2244,7 +2247,10 @@ ACTOR ShotgunCultist // 29011
 			BCUL A 0 A_ChangeFlag("Frightened", 1)
 			XFAN AABBCCDDEEFF 3 A_Chase
 			loop
-		PAIN.Shock:
+		Pain.Thunder:
+		Pain.Shock:
+		Pain.Lightning:
+		Pain.Electric:
 			7ZAP AAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("ShockHuman",random(-1,1),random(-1,1),random(0,3))
 			7ZAP A 4 A_Pain
 			7ZAP A 0 A_JumpIfHealthLower(20,2)
@@ -2727,7 +2733,10 @@ ACTOR Fatty // 25010
 			E15X HIJK 6
 			E15X L -1
 			Stop
-		PAIN.Shock:
+		Pain.Thunder:
+		Pain.Shock:
+		Pain.Lightning:
+		Pain.Electric:
 			7ZAP AAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("ShockHuman",random(-1,1),random(-1,1),random(0,3))
 			7ZAP A 4 A_Pain
 			7ZAP A 0 A_JumpIfHealthLower(20,2)
@@ -5463,7 +5472,10 @@ actor Gibs_general
 			AZUM MNOPQR 5
 			goto See
 
-		PAIN.Shock:
+		Pain.Thunder:
+		Pain.Shock:
+		Pain.Lightning:
+		Pain.Electric:
 			7ZAP AAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("ShockHuman",random(-1,1),random(-1,1),random(0,3))
 			7ZAP A 4 A_Pain
 			7ZAP A 0 A_JumpIfHealthLower(20,2)
