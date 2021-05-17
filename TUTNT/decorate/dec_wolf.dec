@@ -11,12 +11,11 @@ ACTOR AdolfHitlerDS : AetheriusBossZSC 10917
 	Radius 20
 	Height 56
 	Speed 8
-	DamageFactor "Crush", 8
 	Painchance 200
 	Painchance "Fist", 255 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 255 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 8
+	DamageFactor "Crush", 1.0 // 8.0
 	Monster
 	+FLOORCLIP
 	+DOHARMSPECIES

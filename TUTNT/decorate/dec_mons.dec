@@ -852,7 +852,7 @@ ACTOR TNTSpider : MaulotaurBase 10906
 	Painchance "Fist", 38 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 63 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 38 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 2.4
+	DamageFactor "Crush", 0.3 // 2.4
 	Monster
 	+DROPOFF
 	+FLOORCLIP
@@ -1254,7 +1254,7 @@ ACTOR TNTMiniSpider : AetheriusMonsterZSC 22290
 	Height 15
 	Scale 0.25
 	Translation 0
-	DamageFactor "Crush", 24
+	DamageFactor "Crush", 3.0 // 24.0
 	Damage 0 
 	MeleeDamage 1
 	MONSTER

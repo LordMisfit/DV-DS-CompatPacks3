@@ -27,7 +27,7 @@ ACTOR ApprenticeNew : AetheriusMonsterZSC 30000
 	DamageFactor "Explosive", 0.5
 
 	DamageFactor "Magic", 0.5
-	DamageFactor "Crush", 4.8
+	DamageFactor "Crush", 0.6 // 4.8
 	MONSTER 
 	+FloorClip
 	+NoGravity
@@ -324,7 +324,7 @@ ACTOR MiniSpiderNew : AetheriusMonsterZSC 22290
 	Health 15
 	Scale 0.25
 	Translation 0
-	DamageFactor "Crush", 24
+	DamageFactor "Crush", 3.0 // 24.0
 	Damage 0 
 	MeleeDamage 1
 	MONSTER
@@ -472,7 +472,7 @@ ACTOR LargeSpiderNew : AetheriusMonsterZSC 22291
 	RadiusDamageFactor 0.75
 	DamageFactor "Explosive", 0.75
 
-	DamageFactor "Crush", 24
+	DamageFactor "Crush", 3.0 // 24.0
 	MONSTER
 	+FLOORCLIP
 	seesound "littlespider/sight"
@@ -654,7 +654,7 @@ ACTOR TommyGunCultistNew : AetheriusMonsterZSC 29011
 	Painchance "Fist", 255 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 255 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 8
+	DamageFactor "Crush", 1.0 // 8.0
 	obituary "%o was made hole-y by a Fanatic"
 	MONSTER
 	+NOSPLASHALERT
@@ -797,7 +797,7 @@ ACTOR ShotgunCultistNew : TommyGunCultistNew 29010
 	Painchance "Fist", 255 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 255 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 8
+	DamageFactor "Crush", 1.0 // 8.0
 	Translation "80:111=48:79" // "80:111=48:79"
 
 	states
@@ -955,7 +955,7 @@ ACTOR HellHoundNew : AetheriusMonsterZSC 30121
 	RadiusDamageFactor 0.875
 	DamageFactor "Explosive", 0.875
 
-	DamageFactor "Crush", 6.4
+	DamageFactor "Crush", 0.8 // 6.4
 	MONSTER
 	+FloorClip
 	+FireResist
@@ -1197,7 +1197,7 @@ ACTOR ThrallNew : AetheriusMonsterZSC 30119
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 255 // Fist attacks have a +50% chance of stunning an enemy
 	DamageFactor "Magic", 0.75
-	DamageFactor "Crush", 8
+	DamageFactor "Crush", 1.0 // 8.0
 	MONSTER
 	+FLOORCLIP
 	+DONTHURTSPECIES
@@ -1337,7 +1337,7 @@ ACTOR NightmareNew : AetheriusMonsterZSC replaces KDiZDNightmare 26000
 	Painchance "Fist", 216 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 216 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 0
+	DamageFactor "Crush", 0.0 // 0.0
 	DamageFactor "Eldritch", 0.4
 	Radius 20
 	Height 56
@@ -1482,7 +1482,7 @@ ACTOR SirenNightmareNew : NightmareNew 31111
 	DamageFactor "Explosive", 0.2
 
 	DamageFactor "Holy", 5
-	DamageFactor "Crush", 0
+	DamageFactor "Crush", 0.0 // 0.0
 	Radius 12 // 10
 	Height 36 // 30
 	Speed 30
@@ -1692,7 +1692,7 @@ actor VulgarNew : DSDoomImp replaces Vulgar
 	Painchance "Fist", 180 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 180 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 6.4
+	DamageFactor "Crush", 0.8 // 6.4
 	MONSTER
 	+FLOORCLIP
 	+DONTHURTSPECIES
@@ -1832,7 +1832,7 @@ Actor ClayDevilNew : AetheriusMonsterZSC replaces ClayDevil
 	DamageFactor "Shock", 0.8334
 	DamageFactor "Lightning", 0.8334
 	DamageFactor "Electric", 0.8334
-	DamageFactor "Crush", 1
+	DamageFactor "Crush", 0.125 // 1.0
 	MONSTER
 	+BOSSDEATH
 	+DONTHURTSPECIES
@@ -2129,7 +2129,7 @@ ACTOR TCOTDAShadowNew : AetheriusMonsterZSC replaces Shadow 3126
 	Painchance "Fist", 192 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 192 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 6.4
+	DamageFactor "Crush", 0.8 // 6.4
 	MONSTER
 	+FLOORCLIP
 	SEESOUND "imp/sight"
@@ -2313,7 +2313,7 @@ ACTOR SoulHarvesterNew : AetheriusMonsterZSC 3117
 	Painchance "Fist", 180 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 180 // Fist attacks have a +50% chance of stunning an enemy
-	DamageFactor "Crush", 6.4
+	DamageFactor "Crush", 0.8 // 6.4
 	MONSTER 
 	+FloorClip
 	SEESOUND "harvester/sight"
@@ -2444,7 +2444,7 @@ ACTOR ESoulNew : AetheriusMonsterZSC 29012 // : ESoul replaces ESoul 29012
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 192 // Fist attacks have a +50% chance of stunning an enemy
 	DamageFactor "Dark", 0.4
-	DamageFactor "Crush", 0
+	DamageFactor "Crush", 0.0 // 0.0
 	DamageFactor "Holy", 1.75
 	MONSTER
 	+FLOAT
@@ -2571,7 +2571,7 @@ ACTOR DEWraithNew : AetheriusMonsterZSC replaces DEWraith 30106
 	Painchance "Kick", 160 // Kick attacks have a +150% chance of stunning an enemy
 	Painchance "Gauntlets", 96 // Fist attacks have a +50% chance of stunning an enemy
 	DamageFactor "Holy", 1.75
-	DamageFactor "Crush", 0
+	DamageFactor "Crush", 0.0 // 0.0
 	MONSTER
 	+DONTGIB
 	+NOTARGET
@@ -2938,7 +2938,7 @@ ACTOR ButcherZombieNew : AetheriusMonsterZSC 25010
 	DamageFactor "Trample", 0.80
 	DamageFactor "Fire", 2.25
 	DamageFactor "Holy", 1.625
-	DamageFactor "Crush", 3.2
+	DamageFactor "Crush", 0.4 // 3.2
 	obituary "%o was cut down by a bloated butcher."
 	hitobituary "%o was cut up by a bloated butcher."
 	meleesound "twix"
@@ -3295,7 +3295,7 @@ actor BloodZombieNew : AetheriusMonsterZSC 31002
 
 	DamageFactor "Fire", 2
 	DamageFactor "Holy", 1.5
-	DamageFactor "Crush", 6.4
+	DamageFactor "Crush", 0.8 // 6.4
 	MONSTER
 	+BOSSDEATH
 	+FLOORCLIP
@@ -3535,7 +3535,7 @@ ACTOR ThamuzNew : AetheriusMonsterZSC 7228
 	RadiusDamageFactor 0.375
 	DamageFactor "Explosive", 0.375
 
-	DamageFactor "Crush", 0.5
+	DamageFactor "Crush", 0.0625 // 0.5
 	MONSTER
 	+Boss
 	+NoRadiusDMG
@@ -3747,7 +3747,7 @@ Actor TchernobogNew : ThamuzNew replaces Tchernobog 7258
 	RadiusDamageFactor 0.25
 	DamageFactor "Explosive", 0.25
 
-	DamageFactor "Crush", 0.5
+	DamageFactor "Crush", 0.0625 // 0.5
 	Mass 80000
 	Speed 16
 	OBITUARY "%o fell before the might of The One That Binds."
