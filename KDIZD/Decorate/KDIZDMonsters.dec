@@ -561,7 +561,7 @@ ACTOR NightmareNew : AetheriusMonsterZSC 26000
 	+DONTBLAST
 	+NOINFIGHTSPECIES
 	Species "Nightmare"
-	RenderStyle Add
+	RenderStyle "Add"
 	Alpha 0.01
 	SeeSound "nightmare/sight"
 	PainSound "nightmare/pain"
@@ -1655,7 +1655,7 @@ actor MagmantisLostSoul : AetheriusMonsterZSC
 	speed 8
 	damage 3
 	painchance 256
-	renderstyle SoulTrans
+	RenderStyle "SoulTrans"
 	attacksound "skull/melee"
 	painsound "skull/pain"
 	deathsound "skull/death"

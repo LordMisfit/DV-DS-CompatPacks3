@@ -565,7 +565,7 @@ ACTOR TCOTDBulletTracer : AetheriusBulletTracerZSC
 	+DONTREFLECT
 	+BLOODSPLATTER
 	+NODAMAGETHRUST
-	Renderstyle Add
+	RenderStyle "Add"
 	Alpha 1.0
 	Scale 0.5
 	decal BulletChip
@@ -618,7 +618,7 @@ actor TCOTDBulletTracerTrail
 	+NOCLIP
 	+DONTSPLASH
 	Scale 0.5
-	Renderstyle Add
+	RenderStyle "Add"
 	States
 	{
 		Spawn:
@@ -1093,7 +1093,7 @@ ACTOR DogFireNew : AetheriusProjectileZSC replaces DogFire
 	Speed 16
 	Damage (1 * random(1,8))
 	PROJECTILE
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	DamageType Fire
 	Alpha 0.67
 	Scale 0.67
@@ -1353,7 +1353,7 @@ ACTOR NightmareNew : AetheriusMonsterZSC replaces KDiZDNightmare 26000
 	+DONTBLAST
 	+NOINFIGHTSPECIES
 	Species "Nightmare"
-	RenderStyle Add
+	RenderStyle "Add"
 	Alpha 0.01
 	SeeSound "nightmare/sight"
 	PainSound "nightmare/pain"
@@ -1617,7 +1617,7 @@ ACTOR VulgarShotNew : AetheriusEffectProjectile
 	Radius 8
 	Height 16
 	Speed 10
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	ALPHA 0.67
 	PROJECTILE
 	Seesound "poly/stmdr1"
@@ -2467,7 +2467,7 @@ ACTOR ESoulNew : AetheriusMonsterZSC 29012 // : ESoul replaces ESoul 29012
 	damage 5
 	bloodcolor "black"
 	Alpha 0.4
-	RenderStyle Add
+	RenderStyle "Add"
 	Painchance 128
 	Painchance "Fist", 192 // Fist attacks have a +50% chance of stunning an enemy
 	Painchance "Kick", 255 // Kick attacks have a +150% chance of stunning an enemy
@@ -2592,7 +2592,7 @@ ACTOR DEWraithNew : AetheriusMonsterZSC replaces DEWraith 30106
 	Speed 10 
 	Damage 2
 	bloodcolor "darkred"
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	MeleeDamage 1
 	Alpha 0.67 
 	PainChance 64 

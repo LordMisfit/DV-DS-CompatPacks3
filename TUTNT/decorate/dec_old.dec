@@ -210,7 +210,7 @@ ACTOR FlameBreath {
    Radius 16
    Height 1
    Speed 15
-   RenderStyle ADD
+   RenderStyle "Add"
    Scale 0.5
 
    Projectile
@@ -258,7 +258,7 @@ actor QueenElectro
     Speed 20
     Damage 9
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "queen/elec"
     DeathSound "queen/elecx"
@@ -367,7 +367,7 @@ ACTOR CatharsiBall
   Height 8
   Speed 15
   Damage 3
-  RENDERSTYLE Add
+  RenderStyle "Add"
   SEESOUND "catharsi/shotsit"
   DEATHSOUND "catharsi/shotdth"
   PROJECTILE
@@ -1120,7 +1120,7 @@ actor DarkSeeker
     Damage 3
     +SEEKERMISSILE
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -1231,7 +1231,7 @@ actor DarkNormal
     Speed 9
     Damage 3
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -1254,7 +1254,7 @@ actor DarkStrong
     Speed 9
     Damage 6
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -1273,7 +1273,7 @@ actor DarkStrong
 actor DarkTail
 {
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     +NOCLIP
     ALPHA 0.5
     States
@@ -1366,7 +1366,7 @@ actor DarkFast
     Speed 18
     Damage 3
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -1406,7 +1406,7 @@ ACTOR KDiZDNightmare 26000
     +FLOORCLIP
     +STEALTH
     Bloodcolor "cc cc cc"
-    RenderStyle Add
+    RenderStyle "Add"
     Alpha 0.4
     SeeSound "nightmare/sight"
     PainSound "nightmare/pain"
@@ -1449,7 +1449,7 @@ ACTOR NightmareWisp
 	Height 8
 	Speed 0
 	Damage 0
-	RenderStyle ADD
+	RenderStyle "Add"
 	Alpha 0.4
 	PROJECTILE
 	+NOCLIP
@@ -1710,7 +1710,7 @@ actor YellowSkullSeeker
     Damage 3
     +SEEKERMISSILE
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     scale 0.67
     ALPHA 0.67
     DeathSound "implord/shieldshothit"
@@ -1734,7 +1734,7 @@ actor GreenPoisonBall
     Speed 10
     Damage 3
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     DeathSound "imp/shotx"
     States
@@ -1757,7 +1757,7 @@ actor RedSkullBall
     Speed 15
     Damage 12
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -1903,7 +1903,7 @@ actor MiniFirePuff
     Speed 7
     Damage 1
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     States
     {
@@ -2291,7 +2291,7 @@ actor CacolanternBall2
     Speed 20
     Damage 9
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -2383,7 +2383,7 @@ actor BelphegorBall2
     Speed 20
     Damage 10
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -2485,7 +2485,7 @@ actor HellGuardBall
     Speed 10
     Damage 6
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.67
     SeeSound "hellguard/shot"
     DeathSound "hellguard/shothit"
@@ -2580,7 +2580,7 @@ actor SoulHarvesterBall
 	Damage 2
 	+SEEKERMISSILE
 	PROJECTILE
-	Renderstyle ADD
+	RenderStyle "Add"
 	SeeSound "harvester/scream"
 	DeathSound "imp/shotx"
 	Decal DoomImpScorch
@@ -2603,7 +2603,7 @@ actor SoulHarvesterGhost
     Height 1
     Speed 0
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.7
     +NOCLIP
     SeeSound "harvester/ghost"
@@ -2624,7 +2624,7 @@ actor SoulBallTrail
     Height 1
     Speed 0
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.5
     +NOCLIP
     States
@@ -2787,7 +2787,7 @@ actor HellWarriorBall
     Speed 14
     Damage 8
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.7
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -2809,7 +2809,7 @@ actor HellWarriorBall2
     Speed 8
     Damage 2
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     +RANDOMIZE
     +RIPPER
     ALPHA 0.8
@@ -2963,7 +2963,7 @@ actor Comet
 actor CometTail
 {
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     +NOCLIP
     ALPHA 0.4
     States
@@ -2979,7 +2979,7 @@ actor CometTail
 actor CometDeath
 {
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     +NOCLIP
     ALPHA 0.7
     States
@@ -3052,7 +3052,7 @@ actor AfritBall
     Speed 15
     Damage 8
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.8
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -3079,7 +3079,7 @@ ACTOR HellFire2
      Scale 1.5
      Speed 0
      Damage 2
-     RENDERSTYLE ADD
+     RenderStyle "Add"
      ALPHA 0.67
      ExplosionDamage 3
      ExplosionRadius 32
@@ -3318,7 +3318,7 @@ actor TorturedSoulBall
     Speed 20 
     Damage 5 
     PROJECTILE 
-    RENDERSTYLE ADD 
+    RenderStyle "Add" 
     ALPHA 0.67 
     DeathSound "imp/shotx" 
     States 
@@ -3447,7 +3447,7 @@ ACTOR Terror 3124
    Obituary "%o was blasted by a Terror."
    ExplosionDamage 160
    ExplosionRadius 128
-   RenderStyle SoulTrans
+   RenderStyle "SoulTrans"
    States
    {
    Spawn:
@@ -3687,7 +3687,7 @@ actor ShadowTrail
     Height 1
     Speed 0
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.6
     +NOCLIP
     States
@@ -3838,7 +3838,7 @@ ACTOR HellsFuryBall
     Speed 14
     Damage 8
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     ALPHA 0.7
     SeeSound "imp/attack"
     DeathSound "imp/shotx"
@@ -3957,7 +3957,7 @@ ACTOR ElementalPlasma
 	Damage 3
 	Projectile 
 	+RANDOMIZE
-	RenderStyle Add
+	RenderStyle "Add"
 	Alpha 0.75
 	SeeSound "baby/attack"
 	DeathSound "baby/shotx"
@@ -4221,7 +4221,7 @@ ACTOR HSBoom
    ExplosionDamage 112
    ExplosionRadius 112
    PROJECTILE
-   RENDERSTYLE ADD
+   RenderStyle "Add"
    DONTHURTSHOOTER
    SeeSound "monster/hadexp"
    States

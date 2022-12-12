@@ -16,7 +16,7 @@ actor BulletPuff2 : BulletPuff // Bullet sparks
 	VSpeed 0
 	Alpha 0.6
 	Scale 0.5
-	RenderStyle Add 
+	RenderStyle "Add" 
 	Decal BulletChip
 	-RANDOMIZE
 	States
@@ -41,7 +41,7 @@ ACTOR SonicFireball : AetheriusProjectileZSC
 	+RIPPER
 	+NOGRAVITY
 	+DONTSPLASH
-	RenderStyle Add
+	RenderStyle "Add"
 	Alpha 0.7
 	SeeSound "zzz1"
 	DamageType "Fire"
@@ -731,7 +731,7 @@ ACTOR ThrallShot1 : AetheriusProjectileZSC
 	Height 6
 	Speed 14
 	DamageType "Ice"
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Alpha 0.67
 	PROJECTILE
 	DEATHSOUND "monster/disht1"
@@ -843,7 +843,7 @@ ACTOR DogFire : AetheriusProjectileZSC
 	Speed 16
 	Damage 1
 	PROJECTILE
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	DamageType "Fire"
 	Alpha 0.67
 	Scale 0.67
@@ -876,7 +876,7 @@ ACTOR DogShot : AetheriusProjectileZSC
 	Speed 16
 	Damage 7
 	PROJECTILE
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	DamageType "fire"
 	SEESOUND "monster/dogsht"
 	DEATHSOUND "monster/doghit"
@@ -895,7 +895,7 @@ ACTOR DogShot : AetheriusProjectileZSC
 
 ACTOR DogTrail : BulletPuff
 {
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	states
 	{
 		Spawn:
@@ -919,7 +919,7 @@ ACTOR KDiZDNightmare // 26000
 	MONSTER 
 	+FloorClip
 	+Stealth
-	RENDERSTYLE Add
+	RenderStyle "Add"
 	Alpha 0.4
 	SEESOUND "nightmare/sight"
 	PAINSOUND "nightmare/pain"
@@ -962,7 +962,7 @@ ACTOR NightmareWisp
 	Height 8
 	Speed 0
 	Damage 0
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Alpha 0.4
 	PROJECTILE
 	+Noclip
@@ -1198,7 +1198,7 @@ ACTOR ShadowTrail
 	Height 1
 	Speed 0
 	PROJECTILE
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Alpha 0.6
 	+Noclip
 	states
@@ -1280,7 +1280,7 @@ ACTOR SoulHarvesterBall : AetheriusProjectileZSC
 	Speed 9
 	+SeekerMissile
 	PROJECTILE
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	SEESOUND "harvester/scream"
 	DEATHSOUND "imp/shotx"
 	Decal DoomImpScorch
@@ -1324,7 +1324,7 @@ ACTOR SoulHarvesterGhost
 	Height 1
 	Speed 0
 	PROJECTILE
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Alpha 0.7
 	+Noclip
 	SEESOUND "harvester/ghost"
@@ -1343,7 +1343,7 @@ ACTOR SoulBallTrail
 	Height 1
 	Speed 0
 	PROJECTILE
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Alpha 0.5
 	+Noclip
 	states
@@ -1698,7 +1698,7 @@ ACTOR DCBMiss1 : AetheriusProjectileZSC
 	DamageType "BFG"
 	+SeekerMissile
 	+ExtremeDeath
-	Renderstyle Add
+	RenderStyle "Add"
 	SEESOUND "q2weapon/bfgball"
 	DEATHSOUND "q2weapon/bfgballexplo"
 	Decal BFGLightning
@@ -1745,7 +1745,7 @@ ACTOR DCBM1Trail : AetheriusProjectileZSC
 	Scale 0.8
 	+Noclip
 	PROJECTILE
-	RENDERSTYLE Add
+	RenderStyle "Add"
 	Alpha 0.6
 	states
 	{
@@ -1764,7 +1764,7 @@ ACTOR DCBMiss2 : AetheriusProjectileZSC
 	Height 8
 	Health 5
 	Speed 28
-	RENDERSTYLE Add
+	RenderStyle "Add"
 	PROJECTILE
 	Translation "160:167=120:127", "208:223=120:127"
 	SEESOUND "q2weapon/rocketlauncherfire"
@@ -1808,7 +1808,7 @@ ACTOR DCBMiss3 : AetheriusProjectileZSC
 	Health 5
 	Speed 8
 	Scale 2
-	RENDERSTYLE Add
+	RenderStyle "Add"
 	+BloodLessImpact
 	+Ripper
 	+DontSplash
@@ -1856,7 +1856,7 @@ ACTOR DCBMiss3M : AetheriusProjectileZSC
 	Speed 28
 	Scale 1.3
 	+FloorHugger
-	RENDERSTYLE Add
+	RenderStyle "Add"
 	PROJECTILE
 	DEATHSOUND "comet/explosion"
 	Decal RevenantScorch
@@ -1883,7 +1883,7 @@ ACTOR DCBMiss3MCrisis : DCBMiss3M
 	Speed 28
 	Scale 1.3
 	+FloorHugger
-	RENDERSTYLE Add
+	RenderStyle "Add"
 	PROJECTILE
 	DEATHSOUND "comet/explosion"
 	Decal RevenantScorch
@@ -1913,7 +1913,7 @@ ACTOR DCBMiss3MG : AetheriusProjectileZSC
 	Scale 0.8
 	+Noclip
 	PROJECTILE
-	RENDERSTYLE Add
+	RenderStyle "Add"
 	Alpha 0.6
 	states
 	{
@@ -1935,7 +1935,7 @@ Actor DCBMiss3Extra : AetheriusProjectileZSC
 	Radius 1
 	Height 1
 	Scale 0.18
-	RenderStyle Add
+	RenderStyle "Add"
 	Translation "168:191=80:82"
 	States
 	{
@@ -2058,7 +2058,7 @@ ACTOR VulgarShot : AetheriusProjectileZSC
 	Speed 10
 	Damage 4
 	PoisonDamage 32
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	ALPHA 0.67
 	PROJECTILE
 	Seesound "poly/stmdr1"
@@ -2090,7 +2090,7 @@ ACTOR ESoul // 29012
 	damage 5
 	bloodcolor "black"
 	painchance 128
-	renderstyle Add
+	RenderStyle "Add"
 	Alpha 0.4
 	attacksound "skull/melee"
 	PainSound "nightmare/pain"
@@ -2155,7 +2155,7 @@ ACTOR DEWraith // 30106
 	Damage 2
 	bloodcolor "darkred"
 	MeleeDamage 1
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	OBITUARY "A wraith had it's way with %o."
 	HITOBITUARY "%o got bitten by a wraith too many times."
 	Alpha 0.67 
@@ -3215,7 +3215,7 @@ ACTOR NewTeleFog replaces TeleportFog
 	Height 8
 	Speed 0
 	Damage 0
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Alpha 0.4
 	PROJECTILE
 	+Noclip
@@ -3233,7 +3233,7 @@ actor Web2 20002
 	Height 20
 	+SPAWNCEILING 
 	+NOGRAVITY
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	ALPHA 0.35
 	Mass 5
 	States
@@ -3248,7 +3248,7 @@ actor Web3 20001
 {
 	Radius 8
 	Height 20
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	ALPHA 0.35
 	+SPAWNCEILING 
 	+NOGRAVITY
@@ -3711,7 +3711,7 @@ actor VulgarClaySpawner : RandomSpawner2 30127
 	DropItem "ClayDevil", 256, 4
 
 	Alpha 0.0
-	RenderStyle Add 
+	RenderStyle "Add" 
 	States
 	{
 		Spawn:
@@ -4249,7 +4249,7 @@ actor ExMark : SwitchableDecoration 31999
 	//$Sprite "EXCLA0"
 	Radius 1
 	Height 1
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Alpha 1.0
 	Scale 0.15
 	+NoGravity
@@ -4669,7 +4669,7 @@ actor TeslaBall : AetheriusProjectileZSC // Tesla ball (lightning?)
 	Speed 60  	
 	Damage 7
 	DamageType "SHOCK"
-	//  RenderStyle Add
+	//  RenderStyle "Add"
 	//  Alpha 0.9
 	Scale 0.5
 	//	SeeSound "weap/tsla/see"
@@ -4911,7 +4911,7 @@ actor RocketBlood : AetheriusProjectileZSC
 	deathsound "weapons/rocklx"
 	PROJECTILE
 	+RANDOMIZE
-	renderstyle ADD
+	RenderStyle "Add"
 	alpha 0.7
 	states
 	{
@@ -5566,7 +5566,7 @@ Actor BloodZombieBodyDummy
 
 actor BFireTrail// : BulletPuff
 {
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Scale 0.3
 	alpha 0.9
 	+NOBLOCKMAP
@@ -5590,7 +5590,7 @@ actor BFireTrail// : BulletPuff
 /*
 actor FLYINGBLOOD// : BulletPuff
 {
-	RENDERSTYLE ADD
+	RenderStyle "Add"
 	Scale 0.1
 	alpha 0.9
 	+NOBLOCKMAP
@@ -5622,7 +5622,7 @@ ACTOR BJackelopeChargeLoop : Inventory
 ACTOR ShockGargoyle : BJackelopeChargeLoop
 {
 	Scale 0.6
-	renderstyle add
+	RenderStyle "Add"
 	alpha 0.5
 	translation Ice
 	States
@@ -5825,7 +5825,7 @@ Actor FireParticle_Normal_A1A
 	Radius 1
 	Scale 1
 	Alpha 0.9
-	RenderStyle Add
+	RenderStyle "Add"
 
 	States
 	{
@@ -5914,7 +5914,7 @@ Actor Flare_Red_A1A
 	Height 2
 	Radius 1
 	Scale 0.75
-	RenderStyle Add
+	RenderStyle "Add"
 
 	States
 	{
@@ -6029,7 +6029,7 @@ Actor GreenEmber_A1A
 	-Solid
 	+NoBlockmap
 	+NoGravity
-	RenderStyle Add
+	RenderStyle "Add"
 	Scale 0.05
 
 	States
@@ -6067,7 +6067,7 @@ Actor SFX_Wraith
 	Translation "80:111=112:127"
 	Projectile
 	Speed 8
-	RenderStyle Add
+	RenderStyle "Add"
 	Alpha 0.6
 	SeeSound "Monster/SprSit"
 	States

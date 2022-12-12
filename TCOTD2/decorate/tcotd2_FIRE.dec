@@ -38,7 +38,7 @@ actor Flame1A
   height 2
   radius 1
   +NOGRAVITY +NOCLIP +NOBLOCKMAP +MISSILE +CLIENTSIDEONLY +NOINTERACTION
-  renderstyle Add
+  RenderStyle "Add"
   alpha 0.8
   scale 0.35
   states

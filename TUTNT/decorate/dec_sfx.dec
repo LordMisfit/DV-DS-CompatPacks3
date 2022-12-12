@@ -95,7 +95,7 @@ actor CometSmallTail
 {
     PROJECTILE
     Scale 0.33
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     +NOCLIP
     +NOINTERACTION
     ALPHA 0.4
@@ -112,7 +112,7 @@ actor CometSmallTail
 actor CometSmallDeath
 {
     PROJECTILE
-    RENDERSTYLE ADD
+    RenderStyle "Add"
     +NOCLIP
     Scale 0.33
     ALPHA 0.7
@@ -293,7 +293,7 @@ Actor Steam1
     Radius 1
     Speed 4
     +Missile +NoGravity +NoClip  +NOINTERACTION
-    RenderStyle Add
+    RenderStyle "Add"
     Scale 0.5
     Alpha 0.65
     States
@@ -342,7 +342,7 @@ Actor Drop_B1A
 	Radius 1
 	Mass 5
 	+Missile +LowGravity 
-	RenderStyle Add
+	RenderStyle "Add"
 	Scale 0.25
 	States
 	{
@@ -2304,7 +2304,7 @@ actor SparkFlare_W1
   radius 0
   mass 0
   +MISSILE +NOBLOCKMAP +NOCLIP +NOGRAVITY +NoInteraction
-  renderstyle Add
+  RenderStyle "Add"
   scale 0.25
   states
   {
@@ -2379,7 +2379,7 @@ actor Spark_W1
   mass 0
   speed 0.25
   +MISSILE +NOBLOCKMAP +LOWGRAVITY
-  renderstyle Add
+  RenderStyle "Add"
   scale 0.025
   states
   {
@@ -2590,7 +2590,7 @@ actor Flame1A
   height 2
   radius 1
   +NOGRAVITY +NOCLIP +NOBLOCKMAP +MISSILE  +NOINTERACTION
-  renderstyle Add
+  RenderStyle "Add"
   alpha 0.8
   scale 0.35
   states
@@ -2758,7 +2758,7 @@ actor Flame4A
   height 2
   radius 1
   +NOGRAVITY +NOCLIP +NOBLOCKMAP +MISSILE +NoInteraction
-  renderstyle Add
+  RenderStyle "Add"
   alpha 0.8
   scale 0.7
   states
@@ -2926,7 +2926,7 @@ actor Flame7A
   height 2
   radius 1
   +NOGRAVITY +NOCLIP +NOBLOCKMAP +MISSILE +NoInteraction
-  renderstyle Add
+  RenderStyle "Add"
   alpha 0.8
   scale 1.4
   states
@@ -3227,7 +3227,7 @@ actor LavaEmber1
   mass 0
   speed 1.0
   +MISSILE +NOGRAVITY +NOBLOCKMAP
-  renderstyle Add
+  RenderStyle "Add"
   alpha 0.95
   scale 0.06
   states
@@ -3549,7 +3549,7 @@ actor Sparkle_W1
   speed 1.0
   scale 0.18
   +MISSILE +NOCLIP +NOBLOCKMAP +NOGRAVITY +NoInteraction
-  renderstyle Add
+  RenderStyle "Add"
   alpha 0.9
   states
   {
@@ -4119,13 +4119,13 @@ actor TeleportSparkle_B : SwitchableDecoration 20917
 
 actor WaterSplashBase2 : WaterSplashBase
 {
-	renderstyle Add
+	RenderStyle "Add"
 	alpha 0.5
 }
 
 actor WaterSplash2 : WaterSplash
 {
-	renderstyle Add
+	RenderStyle "Add"
 	alpha 0.5
 }
 
@@ -4155,7 +4155,7 @@ actor SlimeChunk2 : SlimeChunk
 
 actor LavaSplash2 : LavaSplash
 {
-	renderstyle Add
+	RenderStyle "Add"
 	alpha 0.5
 }
 
@@ -4178,7 +4178,7 @@ actor PortalEmber1
   height 4
   radius 2
   PROJECTILE -ACTIVATEIMPACT
-  renderstyle Add
+  RenderStyle "Add"
   alpha 0
   scale 0.0625
   states
@@ -4279,7 +4279,7 @@ Actor GlobalBase
  +NOCLIP +NOBLOCKMAP +NoInteraction
  Radius 0
  Height 0
- RenderStyle Add
+ RenderStyle "Add"
  Alpha 1.0
  States
  {
@@ -4449,7 +4449,7 @@ ACTOR BaseLensflare
     Health       -1
     Radius        0
     Height        0
-    Renderstyle ADD
+    RenderStyle "Add"
     Alpha       0.8
       +NOBLOCKMAP +NOINTERACTION
       +GHOST

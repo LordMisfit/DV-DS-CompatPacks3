@@ -13,7 +13,7 @@ Height 4
 Speed 16
 Damage 1
 PROJECTILE
-RENDERSTYLE ADD
+RenderStyle "Add"
 DamageType Fire
 ALPHA 0.67
 Scale 0.67
@@ -45,7 +45,7 @@ ACTOR DropFire
 Radius 8
 Height 40
 PROJECTILE
-RENDERSTYLE ADD
+RenderStyle "Add"
 DamageType Fire
 ALPHA 0.90
 DONTHURTSHOOTER
@@ -105,7 +105,7 @@ Height 12
 Speed 30
 Damage 180
 PROJECTILE
-RENDERSTYLE ADD
+RenderStyle "Add"
 DamageType Fire
 ALPHA 0.95
 Scale 0.75
@@ -157,7 +157,7 @@ ACTOR PyroBoom
 Radius 0
 Height 0
 PROJECTILE
-RENDERSTYLE ADD
+RenderStyle "Add"
 DamageType Fire
 ALPHA 0.95
 Scale 0.67
@@ -197,7 +197,7 @@ Height 11
 Speed 35
 Damage 10
 PROJECTILE
-RENDERSTYLE ADD
+RenderStyle "Add"
 DamageType Fire
 ALPHA 0.95
 +ROCKETTRAIL
@@ -223,7 +223,7 @@ Height 0
 Speed 0
 Scale 1.0
 PROJECTILE
-RENDERSTYLE ADD
+RenderStyle "Add"
 ALPHA 0.85
 States
 {
@@ -540,7 +540,7 @@ Height 2
 Radius 1
 Mass 0
 +Missile +LowGravity
-RenderStyle Add
+RenderStyle "Add"
 Scale 0.12
 Translation "80:111=112:127", "3:3=125:125"
 States
@@ -620,7 +620,7 @@ Height 2
 Radius 1
 Mass 0
 +Missile +LowGravity
-RenderStyle Add
+RenderStyle "Add"
 Scale 0.12
 Translation "80:97=225:227", "98:98=160:160", "99:103=228:231", "104:111=161:167", "3:3=161:161"
 States
@@ -699,7 +699,7 @@ Height 2
 Radius 1
 Mass 0
 +Missile +LowGravity
-RenderStyle Add
+RenderStyle "Add"
 Scale 0.12
 Translation "80:104=192:204", "205:211=240:246", "3:3=206:206"
 States
