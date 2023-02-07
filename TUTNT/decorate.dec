@@ -4,15 +4,15 @@
 
 actor ClientSpawner 19191
 {
-  -SOLID
-  +NOGRAVITY
-  +CLIENTSIDEONLY
-  States
-   {
-   Spawn:
-    TNT1 A 1
-    Loop
-   }
+	-SOLID
+	+NOGRAVITY
+	+CLIENTSIDEONLY
+	States
+	{
+		Spawn:
+			TNT1 A 1
+			Loop
+	}
 }
 
 
@@ -27,5 +27,3 @@ actor ClientSpawner 19191
 #include "decorate/DEC_WOLF.dec"
 #include "decorate/DEC_SMSM.dec"
 #include "decorate/DEC_SFX.dec"
-
-
