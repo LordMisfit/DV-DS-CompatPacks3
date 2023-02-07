@@ -11,6 +11,10 @@ episode TNTL0
  key = "T"
 }
 
+map titlemap "TITLEMAP"
+{
+}
+
 map TNT00 "Skip Map"
 {
  levelnum = 1050

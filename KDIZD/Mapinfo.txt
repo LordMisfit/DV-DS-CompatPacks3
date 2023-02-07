@@ -12,6 +12,8 @@ evenlighting
 forcefallingdamage
 next INTER
 
+map titlemap "TITLEMAP"
+
 map Z1M0 "Skip Map"
 levelnum 1000
 next "Z1M1"
